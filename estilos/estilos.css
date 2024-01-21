@@ -1,0 +1,17 @@
+*{
+    border: 1px solid red;  
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.d-flex-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
