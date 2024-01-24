@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <title>Jean</title>
 </head>
-<header class="d-flex">
-    <div> logo </div>
-    <div class="d-flex">
-        <div>Buscar</div>
-        <div>Lupa</div>
+<header class="d-flex" style="">
+    <div class="padding-30"> <img src="imagenes/consejo-de-la-judicatura-logo.png" alt="l" width="75px"></div>
+    <div class="d-flex cajabuscarylupa ">
+        <div class="buscar align-items-center d-flex colorBorde-Azul"> 
+            <p class="padding-20">Buscar</p>
+            <i class="fa-solid fa-magnifying-glass colorLupa-Azul "></i>
+        </div>
     </div>
 </header>
 
 <body>
-    <nav>
-        <ul>
+    <nav class="align-items-center height-72 background-Azul letraBlanca" >
+        <ul class="align-items-center">
             <li>Inicio</li>
             <li>Concejo de la Judicatura</li>
             <li>Transparencia</li>
@@ -27,16 +30,21 @@
             <li>Intranet</li>
         </ul>
     </nav>
-    <div>
-        <div> Imagen </div>
-        <div>
+    <div class="d-flex imagenNoticia align-items-center" style="gap: 90px;">
+        <div> <img src="imagenes/NoticiaReunion.png" alt=""> </div>
+        <div class="d-flex align-items-center" style="width: 100%;">
+        <i class="fa-solid fa-chevron-left tamañoChevron padding-right-20"></i>
+        <div class="d-flex align-items-center" style="flex-direction: column; gap: 10px">
             <h3>Noticias</h1>
-                <div>
+                
+                <div class="contenedorNoticia">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                </div> 
         </div>
+        <i class="fa-solid fa-chevron-right tamañoChevron padding-left-20"></i>
     </div>
-    <nav>
+    </div>
+    <nav class="nav2" style="border: 1px solid red;">
         <ul>
             <li>Causas</li>
             <li>Pensiones alimenticias/SUPA</li>
@@ -138,12 +146,12 @@
             </div>
         </div>
         <div>
-          <ul>
+            <ul>
                 <li>Web Mail | </li>
                 <li>Links de Interés | </li>
                 <li>Contáctenos | </li>
                 <li>Mapa del Sitio</li>
-          </ul>
+            </ul>
         </div>
         <div>
             <h3>Encuéntranos en:</h3>
@@ -155,4 +163,6 @@
         </div>
     </div>
 </footer>
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
 </html>
