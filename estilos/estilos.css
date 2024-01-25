@@ -1,0 +1,333 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.colorBorde-Azul {
+    border: 2px solid #1C337B !important;
+}
+
+.colorLupa-Azul {
+    color: #1C337B !important;
+}
+
+.background-Azul {
+    background-color: #1C337B !important;
+}
+
+.letraBlanca {
+    color: white !important;
+}
+
+.letraAzul {
+    color: #1C337B !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 65px;
+}
+
+.padding-30 {
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.buscar {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.cajabuscarylupa {
+    align-items: center;
+    justify-content: center;
+    padding-left: 1040px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.padding-20 {
+    padding-right: 220px;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente al centro */
+    justify-content: center;
+    /* Alinea horizontalmente al centro */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.height-72 {
+    height: 65px;
+}
+
+.imagenNoticia {
+    height: 286px;
+    width: 100%;
+}
+
+.contenedorNoticia {
+    width: 550px;
+    height: 175px;
+    border: 1px solid #E6E7E6;
+    background-color: #E6E7E6;
+}
+
+.tamañoChevron {
+    color: #1C337B !important;
+    font-size: 50px;
+}
+
+.padding-left-20 {
+    padding-left: 20px !important;
+}
+
+.padding-right-20 {
+    padding-right: 20px !important;
+}
+
+.nav2 {
+    width: 100%;
+    height: 80px;
+    background-color: #E6E7E6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista {
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+    padding-left: 40px;
+}
+
+.d-flex-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lista {
+    margin-right: 20px; 
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-imagen-cards {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.cards-tamaño{
+    width: 452px;
+    font-size: 16px;
+}
+.estructura-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #1C337B;
+    border-radius: 20px;
+    height: 400px;
+    color: #FFF;
+    font-style: semi-bold;
+    font-size: 32px;
+    
+}
+
+.estructura-cards h3 {
+    text-align: center;
+    margin-bottom: 10px;  
+    
+}
+.contenedorTextoCards {
+    border: 1px solid #E6E7E6;
+    background-color: #E6E7E6;
+    color: black;
+    height: 190px;
+    width: 370px;
+    display: flex; /* Agregado */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFB800;
+}
+
+.tamañoChevron-cards {
+    color: #FFB800 !important;
+    font-size: 50px;
+}
+
+.colorChevron-lista {
+    color: #1C337B !important;
+}
+
+.contenedorAvisos {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorAvisos2 {
+    width: 668px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.contenedorAvisos2 img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.contenedorAzulAvisos {
+    background-color: #1C337B;
+    color: white;
+    width: 500px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+.gap-20px {
+    gap: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tamañoCirclePlus {
+    font-size: 20px;
+}
+footer {
+    background-color: #1C337B;
+    color: #fff;
+    padding: 10px 5px 10px 5px;
+    height: 40px;
+    font-size: 14px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+footer ul li {
+    padding: 0px 20px 0px 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+.mapa{
+    width: 100% !important;
+    height: 300px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyDir{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    margin: 20px 5x 0px 0px;
+    font-size: 11px;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 20px;
+    font-size: 10px;
+}
+
+.tamanioredes{
+    font-size: 20px;
+}
