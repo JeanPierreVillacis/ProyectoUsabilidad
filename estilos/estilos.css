@@ -331,3 +331,136 @@ footer h3 {
 .tamanioredes{
     font-size: 20px;
 }
+
+/* Estilos para pantallas pequeñas (hasta 767px) */
+/*MOBILE S*/
+@media only screen and (max-width: 320px) {
+    header {
+        height: auto;
+        align-items: center;
+        font-size: 9px;
+    }
+    .cajabuscarylupa {
+        padding-left: 0px;
+    }
+    .buscar {
+        width: 150px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        margin: 0px 0px 0px 100px;
+    }	
+    .padding-20 {
+        padding-right: 95px;
+    }
+    .padding-30 {
+        padding-left: 8px;
+        padding-bottom: 2px;
+    }
+    .nav {
+        height: 30px;
+        font-size: 8px !important;
+        width: auto;
+        padding-bottom: 3px;
+    }
+    nav ul li:nth-child(2){
+        width: 50px;
+        gap: 5px;
+        text-align: center;
+    }
+    nav ul li:nth-child(4){
+        width: 30px;
+        gap: 5px;
+    }
+    nav ul li:nth-child(5){
+        width: 30px;
+        gap: 5px;
+        text-align: center;
+    }
+    .imagenNoticia {
+        height: 190px;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        gap: 0px !important;
+        flex-direction: column !important;
+    }
+    .imagenesNoticias {
+        height: auto;
+        width: 100%;
+    }
+    .contenedorNoticia {
+        width: 120px;
+        height: auto;
+        border: 1px solid #E6E7E6;
+        background-color: #E6E7E6;
+        font-size: 8px;
+    }
+    .tNoticias{
+        font-size: 10px;
+    }
+    .infoNoticia {
+        display: flex;
+        gap: 5px !important;
+    }
+    .tamañoChevron {
+        color: #1C337B !important;
+        font-size: 11px;
+        padding: 0px 7px 0px 7px !important;
+    }
+    .nav2 {
+        height: 50px;
+        font-size: 8px;
+        width: auto;
+        padding-bottom: 3px;
+    }
+    listaNav2{
+        gap: 0px !important;
+    }
+    nav ul li:nth-child(2){
+        width: 50px;
+        text-align: center;
+    }
+    nav ul li:nth-child(3){
+        width: 50px;
+        text-align: center;
+    }
+    nav ul li:nth-child(4){
+        width: 50px;
+        text-align: center;
+    }
+    nav ul li:nth-child(5){
+        width: 50px;
+        text-align: center;
+    }
+
+    .lista {
+        padding-left: 20px;
+        margin-right: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards-tamaño {
+        width: 100%;
+    }
+
+    .estructura-cards {
+        height: auto;
+        padding: 20px;
+    }
+
+    /* ... (otros estilos específicos para pantallas pequeñas) ... */
+}
+
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ... (añade estilos específicos para pantallas medianas) ... */
+}
+
+/* Estilos para pantallas grandes (1024px en adelante) */
+@media only screen and (min-width: 1024px) {
+    /* ... (añade estilos específicos para pantallas grandes) ... */
+}
