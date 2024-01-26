@@ -1,0 +1,434 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    font-size: 14px;
+}
+.cajaBuscar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 350px;
+    border: #1C337B 1px solid;
+    border-radius: 20px;
+}
+.txtBuscar {
+    padding: 0px 0px 0px 10px;
+}
+.lupa{
+    padding: 0px 10px 0px 0px;
+}
+
+/*BARRA NAV 1*/
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #1C337B;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+.lista1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    padding: 0px 50px 0px 50px;
+    list-style: none;
+}
+
+/*NOTICIAS*/
+.cajaNoticias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+}
+.imgNoticias{
+    display: flex;
+    height: auto;
+    width: 600px;
+    font-size: 14px;
+}
+.cajaCarrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    font-size: 14px;
+    gap: 50px;
+    padding: 0px 78px 0px 0px;
+}
+.fleIzq, .fleDer{
+    font-size: 50px;
+    color: #1C337B;
+    padding: 0px 10px 0px 10px;
+}
+.fleIzq:hover, .fleDer:hover{
+    cursor: pointer;
+    color: #FFB800;
+}
+.cajaTextoNoticias{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.tNoticias{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+}
+.txtNoticia{
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px 5px 15px 5px;
+    background-color: #E6E7E6;
+}
+.txtNoticia:hover{
+    cursor: pointer;
+}
+.txtNot{
+    font-size: 14px;
+    text-align: justify;
+    background-color: #E6E7E6;
+    width: auto;
+}
+.verMas{
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px 0px 0px 0px;
+}
+
+/*BARRA NAV2*/
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #E6E7E6;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+.lista2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    list-style: none;
+}
+
+/*SERVICIOS*/
+.cajaServicios{
+    height: auto;
+    width: 100%;
+}
+.tServicios{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+.contendorListServicios {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 10px 0px;
+}
+.listaServ {
+    margin: 0px 30px 0px 30px;
+    list-style: none;
+}
+.listaServ li {
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+.fleList {
+    margin-right: 10px;
+}
+.listaServ li:hover{
+    cursor: pointer;
+}
+
+/*CARTAS*/
+.cajaCartas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.estructuraCartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1C337B;
+    border-radius: 20px;
+    height: 400px;
+    width: 370px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;  
+    gap: 20px;
+}
+.tCartas{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+.imgCartas{
+    border-radius: 50%;
+    border: solid 2px #FFB800 ;
+    width: 150px;
+    height: auto;
+}
+.cajaTextoCartas {
+    background-color: #E6E7E6;
+    color: black;
+    font-size: 18px;
+    font-style: semi-bold;
+    height: 150px;
+    width: 90%;
+    border-radius: 20px;
+}
+.txtCartas{
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+}
+
+/*AVISOS Y DISCULPAS*/
+.cajaAvisosDisculpasMapa{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    justify-content: space-between;
+
+}
+.titulosAvisosMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 630px;
+    padding: 10px 0px 0px 0px;
+}
+.cajaAvisosDisculpas{
+    width: 80%;
+    height: auto;
+    margin: 0px 80px 0px 0px;
+}
+.cajaAvisos{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 125px;
+}
+.tAvisos{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.avisos{
+    display: flex;
+    align-items: center;
+    background-color: #1C337B;
+    border-radius: 20px;
+    color: #FFF;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
+}
+.txtAvisos1{
+    padding: 0px 119px 0px 0px;
+}
+.txtAvisos2{
+    padding: 0px 271px 0px 0px;
+}
+.cajaDisculpas{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 125px;
+}
+.tDisculpas, .tUbicacion{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.disculpa{
+    display: flex;
+    align-items: center;
+    background-color: #1C337B;
+    border-radius: 20px;
+    color: #FFF;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
+}
+.txtDisculpa{
+    font-style: semi-bold;
+    text-align: justify;
+    width: auto;
+    height: auto;
+    padding: 0px 328px 0px 0px;
+}
+.mapa {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+.imgMapa{
+    width: 70%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1C337B;
+    color: #fff;
+    padding: 8px 5px 5px 5px;
+    height: 40px;
+    font-size: 14px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+footer ul li {
+    padding: 0px 20px 0px 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+.mapa{
+    width: 100% !important;
+    height: 300px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyDir{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    margin: 20px 5x 0px 0px;
+    font-size: 11px;
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 20px;
+    font-size: 10px;
+}
+
+.tamanioredes{
+    font-size: 20px;
+}
+
+
+/* Estilos para pantallas grandes (1024px en adelante) */
+@media only screen and (min-width: 1024px) {
+    /* ... (añade estilos específicos para pantallas grandes) ... */
+}
+
+/* Estilos para pantallas medianas (320px a 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    header {
+        height: auto;
+        width: 100%;
+        align-items: center;
+        font-size: 9px !important;
+    }
+    .cajabuscarylupa {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .buscar {
+        width: 120px;
+        height: 15px;
+        border-radius: 20px;
+        border: 1px solid #ccc ;
+        margin: 0px 0px 0px 120px !important;
+        padding: 0px 0px 0px 0px !important;
+        font-size: 8px;
+    }	
+    /*NAV*/
+    nav {
+        height:70px;
+        font-size: 200px !important;
+        width: 100%;
+        padding-bottom: 3px !important;
+    }
+    nav ul li:nth-child(2){
+        width: 50px !important;
+        gap: 5px;
+        text-align: center;
+    }
+    nav ul li:nth-child(4){
+        width: 30px !important;
+        gap: 5px;
+    }
+    nav ul li:nth-child(5){
+        width: 30px !important;
+        gap: 5px;
+        text-align: center;
+    }
+}
