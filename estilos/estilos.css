@@ -4,270 +4,321 @@
     font-family: 'Inter', sans-serif;
 }
 
-.d-flex {
-    display: flex;
-}
-
-.colorBorde-Azul {
-    border: 2px solid #1C337B !important;
-}
-
-.colorLupa-Azul {
-    color: #1C337B !important;
-}
-
-.background-Azul {
-    background-color: #1C337B !important;
-}
-
-.letraBlanca {
-    color: white !important;
-}
-
-.letraAzul {
-    color: #1C337B !important;
-}
-
-.justify-content-center {
-    justify-content: center !important;
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-.d-flex-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header {
-    height: 65px;
-}
-
-.padding-30 {
-    padding-left: 30px;
-    padding-top: 5px;
-}
-
-.buscar {
-    width: 300px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding-left: 10px;
-}
-
-.cajabuscarylupa {
-    align-items: center;
-    justify-content: center;
-    padding-left: 1040px;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.padding-20 {
-    padding-right: 220px;
-    padding-left: 10px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    /* Alinea verticalmente al centro */
-    justify-content: center;
-    /* Alinea horizontalmente al centro */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.height-72 {
-    height: 65px;
-}
-
-.imagenNoticia {
-    height: 286px;
-    width: 100%;
-}
-
-.contenedorNoticia {
-    width: 550px;
-    height: 175px;
-    border: 1px solid #E6E7E6;
-    background-color: #E6E7E6;
-}
-
-.tamañoChevron {
-    color: #1C337B !important;
-    font-size: 50px;
-}
-
-.padding-left-20 {
-    padding-left: 20px !important;
-}
-
-.padding-right-20 {
-    padding-right: 20px !important;
-}
-
-.nav2 {
-    width: 100%;
-    height: 80px;
-    background-color: #E6E7E6;
-}
-
-.container {
+/*HEADER*/
+.header {
     display: flex;
     justify-content: space-between;
-}
-
-.lista {
-    list-style: none;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
     padding: 10px;
-    gap: 20px;
-    padding-left: 40px;
+    height: 50px;
+    font-size: 14px;
 }
-
-.d-flex-ul {
+.cajaBuscar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 350px;
+    border: #1C337B 1px solid;
+    border-radius: 20px;
+}
+.txtBuscar {
+    padding: 0px 0px 0px 10px;
+}
+.lupa{
+    padding: 0px 10px 0px 0px;
 }
 
-.lista {
-    margin-right: 20px; 
+/*BARRA NAV 1*/
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #1C337B;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+.lista1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    padding: 0px 50px 0px 50px;
+    list-style: none;
 }
 
-.padding-top-20 {
-    padding-top: 20px;
+/*NOTICIAS*/
+.cajaNoticias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
 }
-
-.padding-imagen-cards {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.imgNoticias{
+    display: flex;
+    height: auto;
+    width: 600px;
+    font-size: 14px;
 }
-
-
-.cards{
+.cajaCarrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    font-size: 14px;
+    gap: 50px;
+    padding: 0px 78px 0px 0px;
+}
+.fleIzq, .fleDer{
+    font-size: 50px;
+    color: #1C337B;
+    padding: 0px 10px 0px 10px;
+}
+.fleIzq:hover, .fleDer:hover{
+    cursor: pointer;
+    color: #FFB800;
+}
+.cajaTextoNoticias{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    text-align: center;
+    height: auto;
+    width: 100%;
 }
-
-
-.cards-tamaño{
-    width: 452px;
+.tNoticias{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+}
+.txtNoticia{
     font-size: 16px;
+    text-align: justify;
+    padding: 15px 5px 15px 5px;
+    background-color: #E6E7E6;
 }
-.estructura-cards{
+.txtNoticia:hover{
+    cursor: pointer;
+}
+.txtNot{
+    font-size: 14px;
+    text-align: justify;
+    background-color: #E6E7E6;
+    width: auto;
+}
+.verMas{
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px 0px 0px 0px;
+}
+
+/*BARRA NAV2*/
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #E6E7E6;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+.lista2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    list-style: none;
+}
+
+/*SERVICIOS*/
+.cajaServicios{
+    height: auto;
+    width: 100%;
+}
+.tServicios{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+.contendorListServicios {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 10px 0px;
+}
+.listaServ {
+    margin: 0px 30px 0px 30px;
+    list-style: none;
+}
+.listaServ li {
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+.fleList {
+    margin-right: 10px;
+}
+.listaServ li:hover{
+    cursor: pointer;
+}
+
+/*CARTAS*/
+.cajaCartas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.estructuraCartas{
     display: flex;
     flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: center;
+    justify-content: center;
     background: #1C337B;
     border-radius: 20px;
     height: 400px;
+    width: 370px;
     color: #FFF;
-    font-style: semi-bold;
-    font-size: 32px;
-    
-}
-
-.estructura-cards h3 {
     text-align: center;
     margin-bottom: 10px;  
-    
+    gap: 20px;
 }
-.contenedorTextoCards {
-    border: 1px solid #E6E7E6;
+.tCartas{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+.imgCartas{
+    border-radius: 50%;
+    border: solid 2px #FFB800 ;
+    width: 150px;
+    height: auto;
+}
+.cajaTextoCartas {
     background-color: #E6E7E6;
     color: black;
-    height: 190px;
-    width: 370px;
-    display: flex; /* Agregado */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-size: 18px;
+    font-style: semi-bold;
+    height: 150px;
+    width: 90%;
+    border-radius: 20px;
 }
-
-.cards img {
-    width: 100%;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #FFB800;
-}
-
-.tamañoChevron-cards {
-    color: #FFB800 !important;
-    font-size: 50px;
-}
-
-.colorChevron-lista {
-    color: #1C337B !important;
-}
-
-.contenedorAvisos {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedorAvisos2 {
-    width: 668px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    text-align: center; 
-}
-
-.contenedorAvisos2 img {
-    max-width: 100%; 
+.txtCartas{
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    width: auto;
     height: auto;
 }
 
-.contenedorAzulAvisos {
-    background-color: #1C337B;
-    color: white;
-    width: 500px;
-    height: 71px;
+/*AVISOS Y DISCULPAS*/
+.cajaAvisosDisculpasMapa{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    justify-content: space-between;
+
+}
+.titulosAvisosMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 630px;
+    padding: 10px 0px 0px 0px;
+}
+.cajaAvisosDisculpas{
+    width: 80%;
+    height: auto;
+    margin: 0px 80px 0px 0px;
+}
+.cajaAvisos{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 125px;
+}
+.tAvisos{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.avisos{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 20px;
+    background-color: #1C337B;
     border-radius: 20px;
+    color: #FFF;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
 }
-.gap-20px {
-    gap: 20px;
+.txtAvisos1{
+    padding: 0px 119px 0px 0px;
+}
+.txtAvisos2{
+    padding: 0px 271px 0px 0px;
+}
+.cajaDisculpas{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 125px;
+}
+.tDisculpas, .tUbicacion{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.disculpa{
+    display: flex;
+    align-items: center;
+    background-color: #1C337B;
+    border-radius: 20px;
+    color: #FFF;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
+}
+.txtDisculpa{
+    font-style: semi-bold;
+    text-align: justify;
+    width: auto;
+    height: auto;
+    padding: 0px 328px 0px 0px;
+}
+.mapa {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: flex-start;
+}
+.imgMapa{
+    width: 70%;
+    height: 90%;
+    border-radius: 5px;
 }
 
-.margin-bottom-20 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.tamañoCirclePlus {
-    font-size: 20px;
-}
+/*FOOTER*/
 footer {
     background-color: #1C337B;
     color: #fff;
-    padding: 10px 5px 10px 5px;
+    padding: 8px 5px 5px 5px;
     height: 40px;
     font-size: 14px;
 }
@@ -332,135 +383,52 @@ footer h3 {
     font-size: 20px;
 }
 
-/* Estilos para pantallas pequeñas (hasta 767px) */
-/*MOBILE S*/
-@media only screen and (max-width: 320px) {
-    header {
-        height: auto;
-        align-items: center;
-        font-size: 9px;
-    }
-    .cajabuscarylupa {
-        padding-left: 0px;
-    }
-    .buscar {
-        width: 150px;
-        height: 20px;
-        border-radius: 20px;
-        border: 1px solid #ccc;
-        margin: 0px 0px 0px 100px;
-    }	
-    .padding-20 {
-        padding-right: 95px;
-    }
-    .padding-30 {
-        padding-left: 8px;
-        padding-bottom: 2px;
-    }
-    .nav {
-        height: 30px;
-        font-size: 8px !important;
-        width: auto;
-        padding-bottom: 3px;
-    }
-    nav ul li:nth-child(2){
-        width: 50px;
-        gap: 5px;
-        text-align: center;
-    }
-    nav ul li:nth-child(4){
-        width: 30px;
-        gap: 5px;
-    }
-    nav ul li:nth-child(5){
-        width: 30px;
-        gap: 5px;
-        text-align: center;
-    }
-    .imagenNoticia {
-        height: 190px;
-        width: 100%;
-        padding: 0px 0px 0px 0px;
-        gap: 0px !important;
-        flex-direction: column !important;
-    }
-    .imagenesNoticias {
-        height: auto;
-        width: 100%;
-    }
-    .contenedorNoticia {
-        width: 120px;
-        height: auto;
-        border: 1px solid #E6E7E6;
-        background-color: #E6E7E6;
-        font-size: 8px;
-    }
-    .tNoticias{
-        font-size: 10px;
-    }
-    .infoNoticia {
-        display: flex;
-        gap: 5px !important;
-    }
-    .tamañoChevron {
-        color: #1C337B !important;
-        font-size: 11px;
-        padding: 0px 7px 0px 7px !important;
-    }
-    .nav2 {
-        height: 50px;
-        font-size: 8px;
-        width: auto;
-        padding-bottom: 3px;
-    }
-    listaNav2{
-        gap: 0px !important;
-    }
-    nav ul li:nth-child(2){
-        width: 50px;
-        text-align: center;
-    }
-    nav ul li:nth-child(3){
-        width: 50px;
-        text-align: center;
-    }
-    nav ul li:nth-child(4){
-        width: 50px;
-        text-align: center;
-    }
-    nav ul li:nth-child(5){
-        width: 50px;
-        text-align: center;
-    }
-
-    .lista {
-        padding-left: 20px;
-        margin-right: 0;
-    }
-
-    .cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .cards-tamaño {
-        width: 100%;
-    }
-
-    .estructura-cards {
-        height: auto;
-        padding: 20px;
-    }
-
-    /* ... (otros estilos específicos para pantallas pequeñas) ... */
-}
-
-/* Estilos para pantallas medianas (768px a 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* ... (añade estilos específicos para pantallas medianas) ... */
-}
 
 /* Estilos para pantallas grandes (1024px en adelante) */
 @media only screen and (min-width: 1024px) {
     /* ... (añade estilos específicos para pantallas grandes) ... */
+}
+
+/* Estilos para pantallas medianas (320px a 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    header {
+        height: auto;
+        width: 100%;
+        align-items: center;
+        font-size: 9px !important;
+    }
+    .cajabuscarylupa {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .buscar {
+        width: 120px;
+        height: 15px;
+        border-radius: 20px;
+        border: 1px solid #ccc ;
+        margin: 0px 0px 0px 120px !important;
+        padding: 0px 0px 0px 0px !important;
+        font-size: 8px;
+    }	
+    /*NAV*/
+    nav {
+        height:70px;
+        font-size: 200px !important;
+        width: 100%;
+        padding-bottom: 3px !important;
+    }
+    nav ul li:nth-child(2){
+        width: 50px !important;
+        gap: 5px;
+        text-align: center;
+    }
+    nav ul li:nth-child(4){
+        width: 30px !important;
+        gap: 5px;
+    }
+    nav ul li:nth-child(5){
+        width: 30px !important;
+        gap: 5px;
+        text-align: center;
+    }
 }
