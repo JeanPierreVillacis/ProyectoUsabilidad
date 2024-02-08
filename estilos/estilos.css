@@ -72,6 +72,13 @@ header {
 }
 
 /*Responsive*/
+@media (max-width: 1100px){
+    .nav1{
+        width: 100%;
+        font-size: 13px;
+        transition: 0.8s;
+    }
+}
 
 @media (max-width: 768px){
     .mostrar-menu, .esconder-menu{
@@ -90,12 +97,14 @@ header {
         right: -100%;
         background-color: #1C337B;
         transition: 0.8s;
+        font-size: 18px;
     }
     .cajaBuscar{
         position: absolute;
         top: 20px;
         right: 60px;
         width: 250px;
+        transition: 0.8s;
     }
     .lista1{
         display: block;
@@ -134,15 +143,13 @@ header {
     display: flex;
     height: 100%;
     width: 100%;
-    font-size: 14px;
 }
 .cajaCarrusel{
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 100%;
-    font-size: 14px;
+    width: 50%;
     gap: 50px;
     padding: 0px 7px 0px 0px;
 }
@@ -189,6 +196,63 @@ header {
     padding: 10px 0px 0px 0px;
 }
 
+@media (max-width: 1100px) {
+    .cajaCarrusel{
+        width: 75%;
+        gap: 20px;
+        transition: 0.8s;
+    }
+    .fleIzq, .fleDer{
+        font-size: 35px;
+        padding: 0px 5px 0px 5px;
+    }
+    .tNoticias{
+        font-size: 18px;
+        padding: 0px 0px 10px 0px;
+        font-size: 16px;
+        transition: 0.8s;
+    }
+    .txtNoticia{
+        padding: 10px 5px 10px 5px;
+    }
+    .txtNot, .verMas{
+        font-size: 12px;
+        transition: 0.8s;
+    }
+}
+
+@media (max-width: 768px) {
+    .cajaNoticias{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .cajaCarrusel{
+        width: 100%;
+        gap: 10px;
+        transition: 0.8s;
+    }
+    .fleIzq, .fleDer{
+        font-size: 30px;
+        transition: 0.8s;
+    }
+    .tNoticias{
+        font-size: 16px;
+        padding: 0px 0px 10px 0px;
+        transition: 0.8s;
+    }
+    .cajaCarrusel{
+        width: 90%;
+    }
+    .txtNot, .verMas{
+        font-size: 12px;
+        transition: 0.8s;
+    }
+}
+
+
 /*BARRA NAV2*/
 .nav2{
     display: flex;
@@ -208,6 +272,58 @@ header {
     width: 100%;
     padding: 0px 50px 0px 50px;
     list-style: none;
+}
+
+@media (max-width: 1284px){
+    .nav2{
+        font-size: 16px;
+        transition: 0.8s;
+    }
+    .lista2{
+        padding: 0px 30px 0px 30px;
+    
+    }
+    .lista2 li{
+        padding: 0px 10px 0px 10px;
+    }
+}
+@media (max-width: 1100px){
+    .nav2{
+        font-size: 13px;
+        transition: 0.8s;
+    }
+    .lista2{
+        padding: 0px 10px 0px 10px;
+    }
+    .lista2 li{
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+@media (max-width: 768px){
+    .nav2{
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .lista2{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    .nav2{
+        font-size: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.8s;
+    }
 }
 
 /*SERVICIOS*/
@@ -243,6 +359,50 @@ header {
 }
 .listaServ li:hover{
     cursor: pointer;
+}
+
+@media (max-width: 1100px){
+    .tServicios{
+        font-size: 22px;
+        padding: 10px 0px 10px 0px;
+        transition: 0.8s;
+    }
+    .contendorListServicios{
+        padding: 0px 10px 0px 10px;
+        transition: 0.8s;
+    }
+    .listaServ{
+        margin: 0px 10px 0px 10px;
+        transition: 0.8s;
+    }
+    .listaServ li{
+        padding: 5px 0px 5px 0px;
+        font-size: 12px;
+        text-align: start;
+        transition: 0.8s;
+    }
+}
+
+@media (max-width: 768px){
+    .tServicios{
+        font-size: 18px;
+        padding: 10px 0px 10px 0px;
+        transition: 0.8s;
+    }
+    .contendorListServicios{
+        padding: 0px 10px 0px 10px;
+        transition: 0.8s;
+    }
+    .listaServ{
+        margin: 0px 10px 0px 10px;
+        transition: 0.8s;
+    }
+    .listaServ li{
+        padding: 5px 0px 5px 0px;
+        font-size: 10px;
+        text-align: start;
+        transition: 0.8s;
+    }
 }
 
 /*CARTAS*/
