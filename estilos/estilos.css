@@ -25,7 +25,19 @@ header {
 }
 
 .txtBuscar {
-    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.botonBusqueda{
+    color: #1C337B;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px 5px 0px 0px; 
+    border: none;
+    cursor: pointer;
 }
 
 .lupa {
@@ -71,6 +83,12 @@ header {
     color: #fff;
     padding: 0px 50px 0px 50px;
     list-style: none;
+    cursor: pointer;
+}
+
+.lista1 a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .mostrar-menu,
@@ -84,8 +102,11 @@ header {
 .mostrar-menu {
     order: 1;
 }
+.esconder-menu {
+    color: #fff;
+}
 
-.lista1 li:hover,
+.lista1 li a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
     color: #FFB800;
@@ -129,11 +150,15 @@ header {
     .cajaBuscar {
         position: absolute;
         top: 20px;
-        right: 60px;
+        right: 130px;
         width: 250px;
         transition: 0.8s;
     }
-
+    .flags{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
     .lista1 {
         display: block;
         padding: 50px 0;
@@ -221,8 +246,9 @@ header {
     background-color: #E6E7E6;
 }
 
-.txtNoticia:hover {
-    cursor: pointer;
+.txtNoticia a{
+    color: #000000;
+    text-decoration: none;
 }
 
 .txtNot {
@@ -237,6 +263,8 @@ header {
     text-align: justify;
     padding: 10px 0px 0px 0px;
 }
+
+
 
 @media (max-width: 1100px) {
     .cajaCarrusel {
@@ -328,6 +356,15 @@ header {
     width: 100%;
     padding: 0px 50px 0px 50px;
     list-style: none;
+    text-align: center;
+}
+
+.lista2 li a{
+    color: #000000;
+    text-decoration: none;
+}
+.lista2 li a:hover{
+    color: #FFB800;
 }
 
 @media (max-width: 1284px) {
@@ -420,6 +457,15 @@ header {
     align-items: center;
 }
 
+.listaServ li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.listaServ li a:hover{
+    color: #FFB800;
+}
+
 .fleList {
     margin-right: 10px;
 }
@@ -494,7 +540,7 @@ header {
     justify-content: center;
     background: #1C337B;
     border-radius: 20px;
-    height: 400px;
+    height: 430px;
     width: 370px;
     color: #FFF;
     text-align: center;
@@ -556,8 +602,8 @@ header {
     }
 
     .estructuraCartas {
-        width: 25%;
-        height: auto;
+        width: 20%;
+        height: 300px;
         gap: 8px;
         transition: 0.8s;
     }
@@ -594,7 +640,7 @@ header {
 
     .estructuraCartas {
         width: 90%;
-        height: auto;
+        height: 260px;
         gap: 8px;
         transition: 0.8s;
     }
@@ -676,6 +722,19 @@ header {
     width: 100%;
     height: auto;
     margin-left: 5%;
+}
+
+.iconMas{
+    cursor: pointer;
+}
+
+.iconMas:hover{
+    color: #FFB800;
+}
+
+.avisos a, .disculpa a{
+    color: #FFF;
+    text-decoration: none;
 }
 
 .tDisculpas,
@@ -866,6 +925,24 @@ footer h4 {
 .redes {
     display: flex;
     gap: 10px;
+}
+
+.enlaces li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlaces li a:hover{
+    color: #FFB800;
+}
+
+.redes a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #FFB800;
 }
 
 @media (max-width: 1368px) {
