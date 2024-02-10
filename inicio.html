@@ -54,14 +54,31 @@
         </div>
     </div>
     <div class="cajaNoticias">
-        <div> <img class="imgNoticias" src="imagenes/FOTODEPRUEBA.jpg" alt=""> </div>
+        <div> <img class="imgNoticias" src="imagenes/fotoReunion2.png" alt=""> </div>
         <div class="cajaCarrusel">
             <i class="fleIzq fa-solid fa-chevron-left "></i>
             <div class="cajaTextoNoticia">
                 <h3 class="tNoticias">Noticias</h1>
                     <div class="txtNoticia">
                         <p class="txtNot">
-                            DEPRUBE: Consejo de la Judicatura y la Universidad de Cuenca firman convenio de cooperación
+                            La dirección general del estado de la judcatura plantea una consulta a la procudaduría
+                            general del estado
+                        </p>
+                        <p class="verMas"> Ver más...</p>
+                    </div>
+            </div>
+            <i class="fleDer fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="cajaNoticias">
+        <div> <img class="imgNoticias" src="imagenes/imagenNoticia3.png" alt=""> </div>
+        <div class="cajaCarrusel">
+            <i class="fleIzq fa-solid fa-chevron-left "></i>
+            <div class="cajaTextoNoticia">
+                <h3 class="tNoticias">Noticias</h1>
+                    <div class="txtNoticia">
+                        <p class="txtNot">
+                           Dictamen de la procudaduría sobre el cese de funciones de magistrados que finalizaron su periodo no es vinculante.
                         </p>
                         <p class="verMas"> Ver más...</p>
                     </div>
@@ -121,52 +138,60 @@
     <div class="cajaCartas">
         <i class="fleIzqCard fa-solid fa-chevron-left"></i>
         <div class="estructuraCartas">
-            <h3 class="tCartas">CONCURSO DESIGNACIÓN CNJ</h3>
+            <h3 class="tCartas">¿Eres víctima de violencia?</h3>
             <div class="cajaImgCartas">
                 <img class="imgCartas" src="imagenes/imagen1cards.jpg" alt="">
             </div>
             <div class="cajaTextoCartas">
-                <p class="txtCartas">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="txtCartas">Conoce sobre las medidas de protección y las entidades donde puedes solicitarlas. Las medidas
+                    de protección son un conjunto de acciones que buscan garantizar la seguridad.</p>
+
+                </p>
             </div>
         </div>
 
         <div class="estructuraCartas">
-            <h3 class="tCartas">CONCURSO DESIGNACIÓN CNJ</h3>
+            <h3 class="tCartas">Concurso público de designación CNJ 2023</h3>
             <div class="cajaImgCartas">
                 <img class="imgCartas" src="imagenes/imagen2cards.jpg" alt="">
             </div>
             <div class="cajaTextoCartas">
-                <p class="txtCartas">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="txtCartas">El Consejo de la Judicatura convoca a los profesionales del Derecho a integrar el Comité. 
+                    Para el concurso de selección y designación de las y los jueces de la CNJ.</p>
             </div>
         </div>
 
         <div class="estructuraCartas">
-            <h3 class="tCartas">CONCURSO DESIGNACIÓN CNJ</h3>
+            <h3 class="tCartas">Estudios jurimétricos y estadística judicial</h3>
             <div class="cajaImgCartas">
                 <img class="imgCartas" src="imagenes/imagen3cards.jpg" alt="">
             </div>
             <div class="cajaTextoCartas">
-                <p class="txtCartas">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="txtCartas">Documentos técnicos que ofrecen registros estadísticos y jurisdiccionales a nivel nacional
+                    Proceso de certificación de operaciones estadística INEC.
+                </p>
             </div>
         </div>
 
         <div class="estructuraCartas">
-            <h3 class="tCartas">YYYYYYYYYYYYYYYYYYYYYY</h3>
+            <h3 class="tCartas">Ventanilla virtual para ingreso de escritos</h3>
             <div class="cajaImgCartas">
-                <img class="imgCartas" src="imagenes/imagen1cards.jpg" alt="">
+                <img class="imgCartas" src="imagenes/card4.png" alt="">
             </div>
             <div class="cajaTextoCartas">
-                <p class="txtCartas">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="txtCartas">El pleno del Consejo de la Judicatura, mediante la Resolución 045-2020, dispone una ventanilla virtual
+                    para presentación de servicios de justicia, para lo cual se habilitará el web del CNJ.</p>
             </div>
         </div>
 
         <div class="estructuraCartas">
-            <h3 class="tCartas">XXXXXXXXXXXXXXXXXXXX</h3>
+            <h3 class="tCartas">Protocolo de manejo de videoaudiencias</h3>
             <div class="cajaImgCartas">
-                <img class="imgCartas" src="imagenes/imagen1cards.jpg" alt="">
+                <img class="imgCartas" src="imagenes/card5.png" alt="">
             </div>
             <div class="cajaTextoCartas">
-                <p class="txtCartas">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="txtCartas">El Pleno del Consejo de la Judicatura, establece la modalidad de llamda en turno de  madrugada en 
+                    flagrancia y prioriza la modalidad de videoaudiencias durante la vigencia establecida en la resolución 074-2020.</p>
             </div>
         </div>
 
@@ -280,40 +305,40 @@
     });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const cajaCartas = document.querySelector('.cajaCartas');
-    const fleIzqCard = document.querySelector('.fleIzqCard');
-    const fleDerCard = document.querySelector('.fleDerCard');
-    const estructuraCartas = document.querySelectorAll('.estructuraCartas');
+    document.addEventListener("DOMContentLoaded", function () {
+        const cajaCartas = document.querySelector('.cajaCartas');
+        const fleIzqCard = document.querySelector('.fleIzqCard');
+        const fleDerCard = document.querySelector('.fleDerCard');
+        const estructuraCartas = document.querySelectorAll('.estructuraCartas');
 
-    let currentOffset = 0; // Offset para el desplazamiento
+        let currentOffset = 0; // Offset para el desplazamiento
 
-    // Función para actualizar la visibilidad de las cartas
-    function updateCardVisibility() {
-        estructuraCartas.forEach((carta, index) => {
-            const adjustedIndex = (index + currentOffset) % estructuraCartas.length;
-            carta.style.display = (adjustedIndex < 3) ? 'flex' : 'none';
-        });
-    }
-
-    // Función para desplazar a la derecha
-    fleDerCard.addEventListener('click', function() {
-        currentOffset++;
-        updateCardVisibility();
-    });
-
-    // Función para desplazar a la izquierda
-    fleIzqCard.addEventListener('click', function() {
-        currentOffset--;
-        if (currentOffset < 0) {
-            currentOffset = estructuraCartas.length - 3;
+        // Función para actualizar la visibilidad de las cartas
+        function updateCardVisibility() {
+            estructuraCartas.forEach((carta, index) => {
+                const adjustedIndex = (index + currentOffset) % estructuraCartas.length;
+                carta.style.display = (adjustedIndex < 3) ? 'flex' : 'none';
+            });
         }
+
+        // Función para desplazar a la derecha
+        fleDerCard.addEventListener('click', function () {
+            currentOffset++;
+            updateCardVisibility();
+        });
+
+        // Función para desplazar a la izquierda
+        fleIzqCard.addEventListener('click', function () {
+            currentOffset--;
+            if (currentOffset < 0) {
+                currentOffset = estructuraCartas.length - 3;
+            }
+            updateCardVisibility();
+        });
+
+        // Mostrar las primeras tres cartas al cargar la página
         updateCardVisibility();
     });
-
-    // Mostrar las primeras tres cartas al cargar la página
-    updateCardVisibility();
-});
 
 </script>
 
