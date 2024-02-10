@@ -162,6 +162,7 @@ header {
     cursor: pointer;
     color: #FFB800;
 }
+
 .cajaTextoNoticias{
     display: flex;
     align-items: center;
@@ -455,6 +456,17 @@ header {
     width: auto;
     height: auto;
 }
+
+.fleIzqCard, .fleDerCard{
+    font-size: 50px;
+    color: #1C337B;
+    padding: 0px 10px 0px 10px;
+}
+.fleIzqCard:hover, .fleDerCard:hover{
+    cursor: pointer;
+    color: #FFB800;
+}
+
 
 @media (max-width:1300px){
     .cajaCartas{
