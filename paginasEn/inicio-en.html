@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Función Judicial</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cajaLogo"> 
+            <img tabindex="1" class="logo" src="imagenes/consejo-de-la-judicatura-logo.png" alt="consejo de la judicatura" width="75px">
+        </div>
+        <div tabindex="2" class="cajaBuscar">
+            <input tabindex="3" class="txtBuscar" placeholder="Buscar"></input>
+            <button class="botonBusqueda" tabindex="4" aria-label="icono de búsqueda con botón" ><i class="lupa fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags_item" data-language="es">
+                <img tabindex="5" src="icons-flags/ec.svg" alt="Bandera del Ecuador para cambiar el idioma a español">
+            </div>
+            <div class="flags_item" data-language="en">
+                <img tabindex="6" src="icons-flags/us.svg" alt="Bandera de Estados Unidos para cambiar el idioma a inglés">
+            </div>
+            <div class="flags_item" data-language="fr">
+                <img tabindex="7" src="icons-flags/fr.svg" alt="Bandera de Francia para cambiar el idioma a francés">
+            </div>
+            <div class="flags_item" data-language="zh">
+                <img tabindex="8" src="icons-flags/cn.svg" alt="Bandera de China para cambiar el idioma a chino mandarin">
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" id="check">
+    <label tabindex="9" for="check" class="mostrar-menu" aria-label="barra de menú">
+        &#8801
+    </label>
+    <nav class="nav1">
+        <ul class="lista1">
+            <li><a tabindex="10" href="">Inicio</a></li>
+            <li><a tabindex="11" href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
+                Concejo de la Judicatura
+            </a></li>
+            <li><a tabindex="12" href="https://www.funcionjudicial.gob.ec/lotaip/transparenciahttps://www.funcionjudicial.gob.ec/lotaip/transparencia">
+                Transparencia
+            </a></li>
+            <li><a tabindex="13" href="https://cjdocumental.funcionjudicial.gob.ec/sgdt/public/busquedaDocumentos.jsf">
+                Trámites externos
+            </a></li>
+            <li><a tabindex="14" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                Sala de prensa
+            </a></li>
+            <li><a tabindex="15" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/341-web-provinciales.html">
+                Provincias
+            </a></li>
+            <li><a tabindex="16" href="http://intranet.funcionjudicial.gob.ec/">
+                Intranet
+            </a></li>
+        </ul>
+        <label tabindex="17" for="check" class="esconder-menu" aria-label="Icono de X parra cerrar el menú">
+            &#215
+    </nav>
+    <div class="cajaNoticias">
+        <div> <img tabindex="18" class="imgNoticias" src="imagenes/NoticiaReunion.png" alt="Grupo de personas reunidas, conversando"> </div>
+        <div class="cajaCarrusel">
+            <div tabindex="23" aria-label="Flecha izquierda para cambiar de noticia">
+                <i class="fleIzq fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="cajaTextoNoticia">
+                <h3 tabindex="19" class="tNoticias">Noticias</h1>
+                    <div class="txtNoticia">
+                        <p tabindex="20" class="txtNot">
+                            La Dirección General del Consejo de la Judicatura prioriza a los grupos vulnerables en el
+                            proceso de pago por sentencias judiciales
+                        </p>
+                        <a tabindex="21" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                            <b class="verMas"> Ver más...</b>
+                        </a>
+                    </div>
+            </div>
+            <div tabindex="23" aria-label="Flecha derecha para cambiar de noticia">
+                <i class="fleDer fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cajaNoticias">
+        <div> <img tabindex="24" class="imgNoticias" src="imagenes/fotoReunion2.png" alt="Grupo de personas reunidas, conversando"> </div>
+        <div class="cajaCarrusel">
+            <div tabindex="28" aria-label="Flecha izquierda para cambiar de noticia">
+                <i class="fleIzq fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="cajaTextoNoticia">
+                <h3 tabindex="25" class="tNoticias">Noticias</h1>
+                    <div class="txtNoticia">
+                        <p tabindex="26" class="txtNot">
+                            La dirección general del estado de la judcatura plantea una consulta a la procudaduría
+                            general del estado
+                        </p>
+                        <a tabindex="27" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                            <b class="verMas"> Ver más...</b>
+                        </a>
+                    </div>
+            </div>
+            <div tabindex="29" aria-label="Flecha derecha para cambiar de noticia">
+                <i class="fleDer fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cajaNoticias">
+        <div> <img tabindex="30" class="imgNoticias" src="imagenes/imagenNoticia3.png" alt="Funcionario del consejo de la Judicatura dando un discurso"> </div>
+        <div class="cajaCarrusel">
+            <div tabindex="34" aria-label="Flecha izquierda para cambiar de noticia">
+                <i class="fleIzq fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="cajaTextoNoticia">
+                <h3 tabindex="31" class="tNoticias">Noticias</h1>
+                <div class="txtNoticia">
+                    <p tabindex="32" class="txtNot">
+                        Dictamen de la procudaduría sobre el cese de funciones de magistrados que finalizaron su
+                        periodo no es vinculante.
+                    </p>
+                    <a tabindex="33" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                        <b class="verMas"> Ver más...</b>
+                    </a>
+                </div>
+            </div>
+            <div tabindex="35" aria-label="Flecha derecha para cambiar de noticia">
+                <i class="fleDer fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <nav class="nav2">
+        <ul class="lista2">
+            <li><a tabindex="36" href="https://procesosjudiciales.funcionjudicial.gob.ec/expel-busqueda-inteligente">
+                Causas
+            </a></li>
+            <li><a tabindex="37" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/471.html">
+                Pensiones alimenticias /SUPA
+            </a></li>
+            <li><a tabindex="38" href="https://www.funcionjudicial.gob.ec/es/component/content/article/25-consejo-judicatura/902-resoluciones-distributivo">
+                Resolución del Pleno 
+            </a></li>
+            <li><a tabindex="39" href="https://apps.funcionjudicial.gob.ec/siscadep/frmConsultaExterna/frmConsultaExterna.php">
+                Guía de Servicios de la Función Judicial
+            </a></li>
+            <li><a tabindex="40" href=""> <!--Enlazar página Jackson y Rafa-->
+                Formularios y Documento</a></li>
+        </ul>
+    </nav>
+
+    <div class="cajaServicios">
+        <h1 tabindex="41" class="tServicios">
+            <p class="letraAzul ">Servicios</p>
+        </h1>
+        <div class="contendorListServicios">
+            <ul class="listaServ">
+                <li><a tabindex="42" href="https://www.funcionjudicial.gob.ec/www/pdf/normativa/2018-08-01-constitucion-reformada.pdf">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Normativa
+                </a></li>
+                <li><a tabindex="43" href="https://www.funcionjudicial.gob.ec/citaciones">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Consultas de Citas Judiciales
+                </a></li>
+                <li><a tabindex="44" href="https://www.icert.fje.gob.ec/web/guest/inicio">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Firma Electrónica
+                </a></li>
+                <li><a tabindex="45" href="https://www.funcionjudicial.gob.ec/mediacion/">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Mediación
+                </a></li>
+                <li><a tabindex="46" href="https://www.funcionjudicial.gob.ec/es/genero">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Violencia de Género
+                </a></li>
+                <li><a tabindex="47" href="https://www.funcionjudicial.gob.ec/es/registro-centros-de-arbitraje">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Registro de Centros de Arbitraje
+                </a></li>
+            </ul>
+
+            <ul class="listaServ">
+                <li><a tabindex="48" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/679-casilleros-electronicos.html">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Casilleros Electrónicos 
+                </a></li>
+                <li><a tabindex="49" href="https://www.funcionjudicial.gob.ec/servicio-pericial">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Peritos
+                </a></li>
+                <li><a tabindex="50" href="">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Foro de Abogados <!--Enlazar páfina Jackson y Rafa-->
+                </a></li>
+                <li><a tabindex="51" href="https://apps.funcionjudicial.gob.ec/bolsadeempleo/index.php?system=14&sessid=0&apl=7&secc=7&Itemid=410">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Bolsa de Empleo
+                </a></li>
+                <li><a tabindex="52" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/353-derechos-humanos.html">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Derechos Humanos - Sentencias Corte IDH
+                </a></li>
+            </ul>
+
+            <ul class="listaServ">
+                <li><a tabindex="53" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/550-cumplimiento-de-sentencias-.html">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Cumplimiento de Sentencias
+                </a></li>
+                <li><a tabindex="54" href = "https://consultas.funcionjudicial.gob.ec/eSatjeExterna/insolvencia">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Declaratoria de Insolvencia y mandatos de ejecución
+                </a></li>
+                <li><a tabindex="55" href = "https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/781-adolescentes-infractores.html">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Adolecentes en conflicto con la ley
+                </a></li>
+                <li><a tabindex="56" href = "https://www.funcionjudicial.gob.ec/es/component/content/article/25-consejo-judicatura/797-repositorio-de-estudios-tecnicos-sobre-justicia-electronica">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Repositorio - Estudios técnicos Justicia Electrónica 
+                </a></li>
+                <li><a tabindex="57" href = "https://www.funcionjudicial.gob.ec/es/component/content/article/25-consejo-judicatura/792-dictamenes-de-la-comision-iberoamericana-de-etica-judicial-">
+                    <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
+                    Dictámenes de la Comisión Iberoamericana de Ética
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cajaCartas">
+        <div tabindex="73" aria-label="Flecha derecha para cambiar de noticia">
+            <i class="fleIzqCard fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="estructuraCartas">
+            <h3 tabindex="58" class="tCartas">¿Eres víctima de violencia?</h3>
+            <div class="cajaImgCartas">
+                <img tabindex="59" class="imgCartas" src="imagenes/imagen1cards.jpg" alt="Chica con altavoz haciendo señal de pare con la mano">
+            </div>
+            <div class="cajaTextoCartas">
+                <p tabindex="60" class="txtCartas">
+                    Conoce sobre las medidas de protección y las entidades donde puedes solicitarlas.
+                    Las medidas
+                    de protección son un conjunto de acciones que buscan garantizar la seguridad.</p>
+                </p>
+            </div>
+        </div>
+
+        <div class="estructuraCartas">
+            <h3 tabindex="61" class="tCartas">Concurso público de designación CNJ 2023</h3>
+            <div class="cajaImgCartas">
+                <img tabindex="62" class="imgCartas" src="imagenes/imagen2cards.jpg" alt="Concurso designación CNJ 2023">
+            </div>
+            <div class="cajaTextoCartas">
+                <p tabindex="63" class="txtCartas">El Consejo de la Judicatura convoca a los profesionales del Derecho a integrar el
+                    Comité.
+                    Para el concurso de selección y designación de las y los jueces de la CNJ.</p>
+            </div>
+        </div>
+
+        <div class="estructuraCartas">
+            <h3 tabindex="64" class="tCartas">Estudios jurimétricos y estadística judicial</h3>
+            <div class="cajaImgCartas">
+                <img tabindex="65" class="imgCartas" src="imagenes/imagen3cards.jpg" alt="2 personas en uan reunión estrechando sus manos">
+            </div>
+            <div class="cajaTextoCartas">
+                <p tabindex="66" class="txtCartas">Documentos técnicos que ofrecen registros estadísticos y jurisdiccionales a nivel
+                    nacional
+                    Proceso de certificación de operaciones estadística INEC.
+                </p>
+            </div>
+        </div>
+
+        <div class="estructuraCartas">
+            <h3 tabindex="67" class="tCartas">Ventanilla virtual para ingreso de escritos</h3>
+            <div class="cajaImgCartas">
+                <img tabindex="68" class="imgCartas" src="imagenes/imagen5cards.png" alt="Computadora en un portal web">
+            </div>
+            <div class="cajaTextoCartas">
+                <p tabindex="69" class="txtCartas">
+                    El pleno del Consejo de la Judicatura, mediante la Resolución 045-2020, dispone una
+                    ventanilla virtual
+                    para presentación de servicios de justicia, para lo cual se habilitará el web del CNJ.</p>
+            </div>
+        </div>
+
+        <div class="estructuraCartas">
+            <h3 tabindex="70" class="tCartas">Protocolo de manejo de videoaudiencias</h3>
+            <div class="cajaImgCartas">
+                <img tabindex="71" class="imgCartas" src="imagenes/imagen4cards.png" alt="Mano con un mazo de juez">
+            </div>
+            <div class="cajaTextoCartas">
+                <p tabindex="72" class="txtCartas">
+                    El Pleno del Consejo de la Judicatura, establece la modalidad de llamda en turno de madrugada en
+                    flagrancia y prioriza la modalidad de videoaudiencias durante la vigencia establecida en la
+                    resolución 074-2020.
+                </p>
+            </div>
+        </div>
+        <div tabindex="74" aria-label="Flecha izquierda para cambiar de noticia">
+            <i class="fleDerCard fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="cajaAvisosDisculpasMapa">
+        <div class="cajaAvisosDisculpas">
+            <h2 tabindex="75" class="tAvisos">Avisos</h2>
+            <div class="cajaAvisos">
+                <div class="avisos">
+                    <p tabindex="76" class="txtAvisos1">Historico de concursos</p>
+                    <a tabindex="77" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/214-historico-de-concursos.html" aria-label="Icono de más para visualizar el historico de concursos">
+                        <i class="iconMas fa-solid fa-circle-plus"></i>
+                    </a>
+                </div>
+                <div class="avisos">
+                    <p tabindex="78" class="txtAvisos2">Prácticas Preprofesionales</p>
+                    <a tabindex="79" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/64-practicas/337-practicas-pre-profesionales.html" aria-label="Icono de más para visualizar página de prácticas preprofesionales">
+                        <i class="iconMas fa-solid fa-circle-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <h2 tabindex="80" class="tDisculpas">Disculpas Públicas</h2>
+            <div class="cajaDisculpas">
+                <div class="disculpa">
+                    <p tabindex="81" class="txtDisculpa">Disculpas Públicas</p>
+                    <a tabindex="82" href="http://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/e2NhcnBldGE6J3RyYW1pdGUnLCB1dWlkOidiMGZmZWU5Ni04NTRiLTQ0ZGItYTMyNi0yYmUzNmI3M2RmYTgucGRmJ30=" aria-label="Icono de más para visualizar las disculpas públicas">
+                        <i class="iconMas fa-solid fa-circle-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mapa">
+            <h2 tabindex="83" class="tUbicacion">Ubicación</h2>
+            <iframe tabindex="84"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7931109751007!2d-78.4861867254067!3d-0.2036771354002766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a0cfe46136b%3A0x9b1cb0f61575a4b3!2sTorre%20B.%20Piso%203%2C%20Edificio%20Boreal%2C%20Ave%2012%20de%20Octubre%20N%2024-739%20y%2C%20Quito%20170143!5e0!3m2!1ses-419!2sec!4v1707423501835!5m2!1ses-419!2sec"
+                width="80%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="escudoDir">
+            <div class="cajaEscudoF">
+                <img tabindex="85" class="escudoEcuador" src="imagenes/ecuador.png" alt="Escudo del Ecuador">
+            </div>
+            <div class="copyDir">
+                <p tabindex="86" class="padding-0">Dirección: 12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="87" class="padding-0">Copyright 2011 Consejo de la Judicatura</p>
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a tabindex="88" href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
+                    Web Mail
+                </a></li>|
+                <li><a tabindex="89" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                    Links de Interés
+                </a></li>|
+                <li><a tabindex="90" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                    Contáctenos
+                </a></li>|
+                <li><a tabindex="91" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                    Mapa del Sitio
+                </a></li>|
+            </ul>
+        </div>
+        <div class="contanier-1">
+            <div class="cajaRedes">
+                <h4 tabindex="92">Encuéntranos en:</h4>
+                <div class="redes">
+                    <a tabindex="93" href="https://www.facebook.com/CJudicaturaEc" aria-label="Icono de facebook">
+                        <i class="fab fa-facebook tamanioredes"></i>
+                    </a>
+                    <a tabindex="94" href="https://twitter.com/CJudicaturaEc" aria-label="Icono de x-twitter">
+                        <i class="fa-brands fa-x-twitter tamanioredes"></i>
+                    </a>
+                    <a tabindex="95" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ" aria-label="Icono de youtube">
+                        <i class="fab fa-youtube tamanioredes"></i>
+                    </a>
+                    <a tabindex="96" href="https://www.instagram.com/cjudicaturaec/" aria-label="Icono de instagram">
+                        <i class="fab fa-instagram tamanioredes"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const botonesIzquierda = document.querySelectorAll('.fleIzq');
+        const botonesDerecha = document.querySelectorAll('.fleDer');
+        const noticias = document.querySelectorAll('.cajaNoticias');
+
+        let indiceNoticiaActual = 0;
+
+        // Función para mostrar la noticia actual
+        function mostrarNoticiaActual() {
+            noticias.forEach((noticia, index) => {
+                if (index === indiceNoticiaActual) {
+                    noticia.style.display = 'flex';
+                } else {
+                    noticia.style.display = 'none';
+                }
+            });
+        }
+
+        // Función para mostrar la siguiente noticia
+        function mostrarSiguienteNoticia() {
+            indiceNoticiaActual = (indiceNoticiaActual + 1) % noticias.length;
+            mostrarNoticiaActual();
+        }
+
+        // Función para mostrar la anterior noticia
+        function mostrarAnteriorNoticia() {
+            indiceNoticiaActual = (indiceNoticiaActual - 1 + noticias.length) % noticias.length;
+            mostrarNoticiaActual();
+        }
+
+        // Agregar eventos a los botones de flecha para mostrar noticias
+        botonesIzquierda.forEach(boton => {
+            boton.addEventListener('click', mostrarAnteriorNoticia);
+        });
+
+        botonesDerecha.forEach(boton => {
+            boton.addEventListener('click', mostrarSiguienteNoticia);
+        });
+
+        // Mostrar la primera noticia al cargar la página
+        mostrarNoticiaActual();
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cajaCartas = document.querySelector('.cajaCartas');
+        const fleIzqCard = document.querySelector('.fleIzqCard');
+        const fleDerCard = document.querySelector('.fleDerCard');
+        const estructuraCartas = document.querySelectorAll('.estructuraCartas');
+        const verMasLinks = document.querySelectorAll('.verMas');
+
+        let currentOffset = 0; // Offset para el desplazamiento
+
+        // Función para actualizar la visibilidad de las cartas
+        function updateCardVisibility() {
+            estructuraCartas.forEach((carta, index) => {
+                const adjustedIndex = (index + currentOffset) % estructuraCartas.length;
+                carta.style.display = (adjustedIndex < 3) ? 'flex' : 'none';
+            });
+        }
+
+        // Función para desplazar a la derecha
+        fleDerCard.addEventListener('click', function () {
+            currentOffset++;
+            updateCardVisibility();
+        });
+
+        // Función para desplazar a la izquierda
+        fleIzqCard.addEventListener('click', function () {
+            currentOffset--;
+            if (currentOffset < 0) {
+                currentOffset = estructuraCartas.length - 3;
+            }
+            updateCardVisibility();
+        });
+
+        // Función para activar el enlace "Ver más"
+        verMasLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                window.location.href = this.getAttribute('href');
+            });
+            link.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    window.location.href = this.getAttribute('href');
+                }
+            });
+        });
+
+        // Mostrar las primeras tres cartas al cargar la página
+        updateCardVisibility();
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Enlace 1: Causas
+        document.querySelector('a[tabindex="36"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 2: Pensiones alimenticias /SUPA
+        document.querySelector('a[tabindex="37"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 3: Resolución del Pleno
+        document.querySelector('a[tabindex="38"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 4: Guía de Servicios de la Función Judicial
+        document.querySelector('a[tabindex="39"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 5: Formularios y Documento
+        document.querySelector('a[tabindex="40"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                // Aquí debes especificar la URL a la que deseas redirigir
+                window.location.href = 'URL_AQUI';
+            }
+        });
+    });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Enlace 1: Inicio
+        document.querySelector('a[tabindex="10"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = 'URL_AQUI';
+            }
+        });
+    
+        // Enlace 2: Concejo de la Judicatura
+        document.querySelector('a[tabindex="11"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 3: Transparencia
+        document.querySelector('a[tabindex="12"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 4: Trámites externos
+        document.querySelector('a[tabindex="13"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 5: Sala de prensa
+        document.querySelector('a[tabindex="14"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 6: Provincias
+        document.querySelector('a[tabindex="15"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    
+        // Enlace 7: Intranet
+        document.querySelector('a[tabindex="16"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                window.location.href = this.getAttribute('href');
+            }
+        });
+    });
+    </script>
+    
+    
+
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+</html>
