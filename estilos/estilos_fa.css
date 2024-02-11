@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
+    border: 1px solid red;
 }
 
 .colorPrimario { color: #1C337B; }
@@ -129,7 +130,12 @@ form {
 .columnasRepresentante {
     column-count: 2;
     display: flex;
+    max-width: 80%;
+
+    gap: 20px;
 }
+
+
 
 /**/
 .input-group2 {
@@ -181,6 +187,21 @@ form {
     border-radius: 20px;
     border: 0px;
 }
+
+.diseñoBotones :hover{
+    cursor: pointer;
+}
+
+.d-flex_fd-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.borde_redondeado{
+    border: 3px solid #1C337B;
+    border-radius: 20px;
+}
+
 
 /**/
 .textoFinal {

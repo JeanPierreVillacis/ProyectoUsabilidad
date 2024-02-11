@@ -89,26 +89,26 @@
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required><br>
                     </div>
-    
+
                     <div class="input-group">
                         <label for="domicilio">Domicilio:</label>
                         <input type="text" id="domicilio" name="domicilio" required><br>
                     </div>
-                    
+
                     <div class="input-group">
                         <label for="provincia">Provincia:</label>
                         <input type="text" id="provincia" name="provincia" required><br>
                         <label for="correo">Email:</label>
                         <input type="email" id="correo" name="correo" required><br>
                     </div>
-                    
+
                     <div class="input-group">
                         <label for="canton">Cantón:</label>
                         <input type="text" id="canton" name="canton" required><br>
                         <label for="clave">Clave:</label>
                         <input type="password" id="clave" name="clave" required><br>
                     </div>
-                    
+
                     <div class="input-group">
                         <label for="celular">Celular:</label>
                         <input type="tel" id="celular" name="celular" required><br>
@@ -119,27 +119,41 @@
             </div>
         </div>
 
-        <div class="contenedorForms gapFormularios">
+        <div class="contenedorForms gapFormularios" style="height: auto;">
             <div class="tituloForm colorPrimario">
                 <p>Datos Del Representante</p>
             </div>
-            <div class="cajaForm2 textoInternoForms colorPrimario columnasRepresentante">
-                    <div>
-                        <form action="#" method="post"></form>
-                            <div>
-                                <label for="nombre">Número de cédula:</label>
-                                <input type="text" id="nombre" name="nombre" required><br>
-                            </div>
-                            <div>
-                                <label for="domicilio">Subir copia de cédula:</label>
-                                <input type="submit" id="domicilio" name="domicilio" required><br>
-                            </div>
-                        </form>
+            <div class="cajaForm textoInternoForms colorPrimario columnasRepresentante" style="justify-content: space-between;">
+                <div class="d-flex_fd-column" style="justify-content: space-around;">
+                    <div class="input-group">
+                        <label style="margin: 5px 10px;" for="nombre">Número de cédula:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
                     </div>
-                    <div>
-                        <p class="textoInternoForms">¿Cómo subir tu archivo? Mira el video.</p>
-                        <p>Insertar video explicativo</p>
+                    <div style="display: flex; justify-content: left;" class="input-group">
+                        <label for="domicilio">Subir copia de cédula:</label>
+                        <div class="d-flex_fd-column" style="width: 100%;">
+                            <div style="display: flex; justify-content: center;">
+                                <button class="diseñoBotones colorBlanco">
+                                    <i class="fa-solid fa-file-arrow-up fa-2xl"></i>
+                                </button>
+                            </div>
+                            <p style="display: flex; justify-content: center;">cedula.pdf</p>
+                        </div>
                     </div>
+                </div>
+                <div class="d-flex_fd-column">
+                    <label style="margin: 5px 10px; text-align: center;">¿Cómo subir tu archivo? Mira el video.</label>
+                    <div style="width: auto; height: auto; margin: 5px 10px;">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/7-kSf0XSJCM?si=v4I6OmbFoxsxVjmM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            class="borde_redondeado">
+                        </iframe>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -153,14 +167,15 @@
                         <label for="nombre">Número de cédula:</label>
                         <input type="text" id="nombre" name="nombre" required><br>
                     </div>
-    
+
                     <div class="input-group2">
                         <label for="domicilio">Número de matrícula del foro:</label>
                         <input type="text" id="domicilio" name="domicilio" required><br>
                     </div>
 
                     <div class="botones">
-                        <input class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;" type="submit" value="Buscar">
+                        <input class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;"
+                            type="submit" value="Buscar">
                     </div>
                 </form>
             </div>
@@ -169,9 +184,9 @@
 
     <div class="textoFinal espacioInferiorFormularios">
         <p class="textoInternoForms">
-            * El presente formulario deberá ser impreso y firmado por todos los abogados miembros 
-            del Estudio Jurídico Colectivo,acompañado de copias de cédulas y papeletas de votación 
-            de todos los participantes; y presentada en las Direcciones Provinciales del Consejo de 
+            * El presente formulario deberá ser impreso y firmado por todos los abogados miembros
+            del Estudio Jurídico Colectivo,acompañado de copias de cédulas y papeletas de votación
+            de todos los participantes; y presentada en las Direcciones Provinciales del Consejo de
             la Judicatura.
         </p>
     </div>
@@ -186,7 +201,7 @@
         <button class="diseñoBotones textoInternoForms colorBlanco">Aceptar</button>
         <button class="diseñoBotones textoInternoForms colorBlanco">Cancelar</button>
     </div>
-    
+
 </body>
 <footer>
     <div class="footer-container">
