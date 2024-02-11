@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos_fa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <title>Foro De Abogados</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cajaLogo">
+            <img tabindex="1" class="logo" src="imagenes/consejo-de-la-judicatura-logo.png"
+                alt="consejo de la judicatura" width="75px">
+        </div>
+        <div tabindex="2" class="cajaBuscar">
+            <input tabindex="3" class="txtBuscar" placeholder="Buscar"></input>
+            <button class="botonBusqueda" tabindex="4" aria-label="icono de búsqueda con botón"><i
+                    class="lupa fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags_item" data-language="es">
+                <img tabindex="5" src="icons-flags/ec.svg" alt="Bandera del Ecuador para cambiar el idioma a español">
+            </div>
+            <div class="flags_item" data-language="en">
+                <a href="/paginasEn/inicio-en.html">
+                    <img tabindex="6" src="icons-flags/us.svg"
+                        alt="Bandera de Estados Unidos para cambiar el idioma a inglés">
+                </a>
+            </div>
+            <div class="flags_item" data-language="fr">
+                <img tabindex="7" src="icons-flags/fr.svg" alt="Bandera de Francia para cambiar el idioma a francés">
+            </div>
+            <div class="flags_item" data-language="zh">
+                <img tabindex="8" src="icons-flags/cn.svg"
+                    alt="Bandera de China para cambiar el idioma a chino mandarin">
+            </div>
+        </div>
+    </header>
+
+    <input type="checkbox" id="check">
+    <label tabindex="9" for="check" class="mostrar-menu" aria-label="barra de menú">
+        &#8801
+    </label>
+    <nav class="nav1">
+        <ul class="lista1">
+            <li><a tabindex="10" href="">Inicio</a></li>
+            <li><a tabindex="11"
+                    href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
+                    Concejo de la Judicatura
+                </a></li>
+            <li><a tabindex="12"
+                    href="https://www.funcionjudicial.gob.ec/lotaip/transparenciahttps://www.funcionjudicial.gob.ec/lotaip/transparencia">
+                    Transparencia
+                </a></li>
+            <li><a tabindex="13" href="https://cjdocumental.funcionjudicial.gob.ec/sgdt/public/busquedaDocumentos.jsf">
+                    Trámites externos
+                </a></li>
+            <li><a tabindex="14" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                    Sala de prensa
+                </a></li>
+            <li><a tabindex="15"
+                    href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/341-web-provinciales.html">
+                    Provincias
+                </a></li>
+            <li><a tabindex="16" href="http://intranet.funcionjudicial.gob.ec/">
+                    Intranet
+                </a></li>
+        </ul>
+        <label tabindex="17" for="check" class="esconder-menu" aria-label="Icono de X parra cerrar el menú">
+            &#215
+    </nav>
+
+    <h1 class="tServicios">
+        <p class="colorPrimario">Sistema Informativo Foro de Abogados</p>
+    </h1>
+
+    <div class="cajaFormEJ">
+        <div class="contenedorForms">
+            <div class="tituloForm colorPrimario">
+                <p>Registro De Estudios Jurídicos Colectivos</p>
+            </div>
+            <div class="cajaForm colorPrimario">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="domicilio">Domicilio:</label>
+                        <input type="text" id="domicilio" name="domicilio" required><br>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="provincia">Provincia:</label>
+                        <input type="text" id="provincia" name="provincia" required><br>
+                        <label for="correo">Email:</label>
+                        <input type="email" id="correo" name="correo" required><br>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="canton">Cantón:</label>
+                        <input type="text" id="canton" name="canton" required><br>
+                        <label for="clave">Clave:</label>
+                        <input type="password" id="clave" name="clave" required><br>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular" required><br>
+                        <label for="confirmar_clave">Confirmar Clave:</label>
+                        <input type="password" id="confirmar_clave" name="confirmar_clave" required><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="contenedorForms gapFormularios">
+            <div class="tituloForm colorPrimario">
+                <p>Datos Del Representante</p>
+            </div>
+            <div class="cajaForm2 textoInternoForms colorPrimario columnasRepresentante">
+                    <div>
+                        <form action="#" method="post"></form>
+                            <div>
+                                <label for="nombre">Número de cédula:</label>
+                                <input type="text" id="nombre" name="nombre" required><br>
+                            </div>
+                            <div>
+                                <label for="domicilio">Subir copia de cédula:</label>
+                                <input type="submit" id="domicilio" name="domicilio" required><br>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <p class="textoInternoForms">¿Cómo subir tu archivo? Mira el video.</p>
+                        <p>Insertar video explicativo</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="contenedorForms gapFormularios espacioInferiorFormularios">
+            <div class="tituloForm colorPrimario">
+                <p>Datos De Abogados Participantes</p>
+            </div>
+            <div class="cajaForm colorPrimario">
+                <form action="#" method="post">
+                    <div class="input-group2">
+                        <label for="nombre">Número de cédula:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                    </div>
+    
+                    <div class="input-group2">
+                        <label for="domicilio">Número de matrícula del foro:</label>
+                        <input type="text" id="domicilio" name="domicilio" required><br>
+                    </div>
+
+                    <div class="botones">
+                        <input class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;" type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p class="textoInternoForms">
+            * El presente formulario deberá ser impreso y firmado por todos los abogados miembros 
+            del Estudio Jurídico Colectivo,acompañado de copias de cédulas y papeletas de votación 
+            de todos los participantes; y presentada en las Direcciones Provinciales del Consejo de 
+            la Judicatura.
+        </p>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p class="textoInternoForms">
+            * Todos los campos son requeridos.
+        </p>
+    </div>
+
+    <div class="botones espacioInferiorFormularios">
+        <button class="diseñoBotones textoInternoForms colorBlanco">Aceptar</button>
+        <button class="diseñoBotones textoInternoForms colorBlanco">Cancelar</button>
+    </div>
+    
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="escudoDir">
+            <div class="cajaEscudoF">
+                <img tabindex="85" class="escudoEcuador" src="imagenes/ecuador.png" alt="Escudo del Ecuador">
+            </div>
+            <div class="copyDir">
+                <p tabindex="86" class="padding-0">Dirección: 12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="87" class="padding-0">Copyright 2011 Consejo de la Judicatura</p>
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a tabindex="88"
+                        href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
+                        Web Mail
+                    </a></li>|
+                <li><a tabindex="89" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                        Links de Interés
+                    </a></li>|
+                <li><a tabindex="90" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                        Contáctenos
+                    </a></li>|
+                <li><a tabindex="91" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                        Mapa del Sitio
+                    </a></li>|
+            </ul>
+        </div>
+        <div class="contanier-1">
+            <div class="cajaRedes">
+                <h4 tabindex="92">Encuéntranos en:</h4>
+                <div class="redes">
+                    <a tabindex="93" href="https://www.facebook.com/CJudicaturaEc" aria-label="Icono de facebook">
+                        <i class="fab fa-facebook tamanioredes"></i>
+                    </a>
+                    <a tabindex="94" href="https://twitter.com/CJudicaturaEc" aria-label="Icono de x-twitter">
+                        <i class="fa-brands fa-x-twitter tamanioredes"></i>
+                    </a>
+                    <a tabindex="95" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ"
+                        aria-label="Icono de youtube">
+                        <i class="fab fa-youtube tamanioredes"></i>
+                    </a>
+                    <a tabindex="96" href="https://www.instagram.com/cjudicaturaec/" aria-label="Icono de instagram">
+                        <i class="fab fa-instagram tamanioredes"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+</html>

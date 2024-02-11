@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.colorPrimario { color: #1C337B; }
+.colorBlanco { color: #FFFFFF; }
+
+.gapFormularios { margin-top: 25px; }
+
+.espacioInferiorFormularios { margin-bottom: 25px; }
+
+/* Contenedor de todos los formularios */
+.cajaFormEJ {
+    height: auto;
+    width: 100%;
+}
+
+/* Contenedor del primer formulario */
+.contenedorForms {
+    height: auto;
+    background-color: #E6E7E6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.tituloForm {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.cajaForm {
+    padding-bottom: 15px;
+    width: 60%;
+}
+
+.cajaForm label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.textoInternoForms {
+    font-size: 14px;
+    font-weight: bold;
+    color: colorPrimario
+}
+
+.cajaForm input {
+    margin: 5px 10px 5px 0px;
+}
+
+/***************************/
+
+.input-group {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.input-group label {
+    width: 68px;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+form {
+    max-width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #1C337B;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-group label {
+        width: 100%;
+    }
+
+    .input-group input {
+        width: calc(50% - 5px);
+    }
+}
+
+/* Formulario Datos del Representate */
+.cajaForm2 {
+    padding-bottom: 15px;
+    width: 70%;
+}
+
+.cajaForm2 input {
+    margin: 5px 10px 5px 0px;
+}
+
+.columnasRepresentante {
+    column-count: 2;
+    display: flex;
+}
+
+/**/
+.input-group2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.input-group2 label {
+    width: 78px;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.input-group2 input {
+    flex: 1;
+}
+
+.input-group2 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group2 input {
+    max-width: 30%;
+    padding: 8px;
+    border: 1px solid #1C337B;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    gap: 80px;
+}
+
+.botones :hover {
+    cursor: pointer;
+}
+
+.diseñoBotones {
+    background-color: #1C337B;
+    padding: 12px 40px 12px 40px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+/**/
+.textoFinal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%
+}
