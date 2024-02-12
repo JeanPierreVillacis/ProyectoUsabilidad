@@ -182,13 +182,30 @@ form {
 
 .diseñoBotones {
     background-color: #1C337B;
-    padding: 12px 40px 12px 40px;
+    padding: 12px 40px;
     border-radius: 20px;
     border: 0px;
 }
 
-.diseñoBotones :hover{
-    cursor: pointer;
+.diseñoBotonesDescarga {
+    background-color: #1C337B;
+    padding: 0px 30px;
+    border-radius: 20px;
+    border: 0px;
+
+    height: 44px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diseñoCajasTexto {
+    background-color: #1C337B;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 50%;
 }
 
 .d-flex_fd-column{
@@ -196,9 +213,28 @@ form {
     flex-direction: column;
 }
 
+.d-flex-botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d-flex-botones :hover{
+    background-color: #FFB800;
+}
+
+.d-flex_jc-sb{
+    display: flex;
+    justify-content: space-between;
+}
+
 .borde_redondeado{
     border: 3px solid #1C337B;
     border-radius: 20px;
+}
+
+.mb-10{
+    margin: 0px 0px 10px 0px;
 }
 
 
