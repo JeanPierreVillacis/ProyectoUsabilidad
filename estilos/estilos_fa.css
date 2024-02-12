@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
+    border: 1px solid red;
 }
 
 .colorPrimario { color: #1C337B; }
@@ -228,6 +229,12 @@ form {
     justify-content: space-between;
 }
 
+.d-flex-centrado {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
 .borde_redondeado{
     border: 3px solid #1C337B;
     border-radius: 20px;
@@ -245,4 +252,10 @@ form {
     text-align: center;
     margin-left: 25%;
     margin-right: 25%
+}
+
+.redondeadoI {
+    background-color: #1C337B;
+    padding: 20px 60px;
+    border-radius: 20px;
 }
