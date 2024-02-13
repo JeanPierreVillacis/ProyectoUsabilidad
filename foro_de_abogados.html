@@ -75,74 +75,76 @@
     </nav>
 
     <h1 class="tServicios">
-        <p class="colorPrimario">Sistema Informativo Foro de Abogados</p>
+        <p tabindex="18" class="colorPrimario">Sistema Informativo Foro de Abogados</p>
     </h1>
 
     <div class="cajaFormEJ">
-        <div class="contenedorForms">
-            <div class="tituloForm colorPrimario">
-                <p>Registro De Estudios Jurídicos Colectivos</p>
+        <!-- Registro de estudio juridicos -->
+        <section>
+            <div class="contenedorForms">
+                <div class="tituloForm colorPrimario">
+                    <p tabindex="19" aria-label="Seccion para registro de estudios juridicos colectivos">Registro De Estudios Jurídicos Colectivos</p>
+                </div>
+                <div class="cajaForm colorPrimario">
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label tabindex="20" for="nombre">Nombre:</label>
+                            <input tabindex="21" aria-label="Input para ingresar el nombre" type="text" id="nombre" name="nombre" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="22" for="domicilio">Domicilio:</label>
+                            <input tabindex="23" aria-label="Input para ingresar el domicilio" type="text" id="domicilio" name="domicilio" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="24" for="provincia">Provincia:</label>
+                            <input tabindex="25" aria-label="Input para ingresar la provincia" type="text" id="provincia" name="provincia" required><br>
+                            <label tabindex="30" for="correo">Email:</label>
+                            <input tabindex="31" aria-label="Input para ingresar el email" type="email" id="correo" name="correo" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="26" for="canton">Cantón:</label>
+                            <input tabindex="27" aria-label="Input para ingresar el canton" type="text" id="canton" name="canton" required><br>
+                            <label tabindex="32" for="clave">Clave:</label>
+                            <input tabindex="33" aria-label="Input para ingresar la clave" type="password" id="clave" name="clave" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="28" for="celular">Celular:</label>
+                            <input tabindex="29" aria-label="Input para ingresar el celular" type="tel" id="celular" name="celular" required><br>
+                            <label tabindex="34" for="confirmar_clave">Confirmar Clave:</label>
+                            <input tabindex="35" aria-label="Input para confirmar clave" type="password" id="confirmar_clave" name="confirmar_clave" required><br>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="cajaForm colorPrimario">
-                <form action="#" method="post">
-                    <div class="input-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required><br>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="domicilio">Domicilio:</label>
-                        <input type="text" id="domicilio" name="domicilio" required><br>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="provincia">Provincia:</label>
-                        <input type="text" id="provincia" name="provincia" required><br>
-                        <label for="correo">Email:</label>
-                        <input type="email" id="correo" name="correo" required><br>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="canton">Cantón:</label>
-                        <input type="text" id="canton" name="canton" required><br>
-                        <label for="clave">Clave:</label>
-                        <input type="password" id="clave" name="clave" required><br>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" name="celular" required><br>
-                        <label for="confirmar_clave">Confirmar Clave:</label>
-                        <input type="password" id="confirmar_clave" name="confirmar_clave" required><br>
-                    </div>
-                </form>
-            </div>
-        </div>
+        </section>
 
         <div class="contenedorForms gapFormularios" style="height: auto;">
             <div class="tituloForm colorPrimario">
-                <p>Datos Del Representante</p>
+                <p tabindex="36" aria-label="Seccion para datos del Representante">Datos Del Representante</p>
             </div>
             <div class="cajaForm textoInternoForms colorPrimario columnasRepresentante" style="justify-content: space-between;">
                 <div class="d-flex_fd-column" style="justify-content: space-around;">
                     <div class="input-group">
-                        <label style="margin: 5px 10px;" for="nombre">Número de cédula:</label>
-                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label tabindex="36" style="margin: 5px 10px;" for="nombre">Número de cédula:</label>
+                        <input tabindex="37" aria-label="Input para ingresar el numero de cedula" type="text" id="nombre" name="nombre" required><br>
                     </div>
                     <div style="display: flex; justify-content: left;" class="input-group">
-                        <label for="domicilio" style="padding-right: 20px;">Subir copia de cédula:</label>
+                        <label tabindex="38" for="domicilio" style="padding-right: 20px;">Subir copia de cédula:</label>
                         <div class="d-flex_fd-column" style="width: 100%; margin-right: 10px;">
                             <form action="">
                                 <input type="file" name="subir documento" id="subir documento" hidden>
                                 <div class="d-flex-centrado">
                                     <label for="subir documento" style="width: auto;">
                                         <div class="d-flex_fd-column iconoSubirCedula">
-                                            <a class="redondeadoI">
+                                            <a tabindex="39" aria-label="Botón para subir la copia de cedula" class="redondeadoI">
                                                 <i class="fa-solid fa-file-arrow-up fa-2xl colorBlanco" style="display: flex; justify-content: center; align-items: center;"></i>
                                             </a>
-                                            
                                         </div>
-                                        <p style="display: flex; justify-content: center;">cedula.pdf</p>
+                                        <p tabindex="40" style="display: flex; justify-content: center;">cedula.pdf</p>
                                     </label>
                                 </div>
                             </form>
@@ -150,9 +152,10 @@
                     </div>
                 </div>
                 <div class="d-flex_fd-column">
-                    <label style="margin: 5px 10px; text-align: center;">¿Cómo subir tu archivo? Mira el video.</label>
+                    <label tabindex="41" style="margin: 5px 10px; text-align: center;">¿Cómo subir tu archivo? Mira el video.</label>
                     <div style="width: auto; height: auto; margin: 5px 10px;">
-                        <iframe width="98%" height="98%"
+                        <iframe tabindex="42" 
+                            width="98%" height="98%"
                             src="https://www.youtube.com/embed/7-kSf0XSJCM?si=v4I6OmbFoxsxVjmM"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -167,22 +170,22 @@
 
         <div class="contenedorForms gapFormularios espacioInferiorFormularios">
             <div class="tituloForm colorPrimario">
-                <p>Datos De Abogados Participantes</p>
+                <p tabindex="43" aria-label="Seccion para datos de abogados participantes">Datos De Abogados Participantes</p>
             </div>
             <div class="cajaForm colorPrimario">
                 <form action="#" method="post">
                     <div class="input-group2">
-                        <label for="nombre">Número de cédula:</label>
-                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label tabindex="44" for="nombre">Número de cédula:</label>
+                        <input tabindex="45" aria-label="Input para ingresar el numero de cedula" type="text" id="nombre" name="nombre" required><br>
                     </div>
 
                     <div class="input-group2">
-                        <label for="domicilio">Número de matrícula del foro:</label>
-                        <input type="text" id="domicilio" name="domicilio" required><br>
+                        <label tabindex="46" for="domicilio">Número de matrícula del foro:</label>
+                        <input tabindex="47" aria-label="Input para ingresar numero de matrícula del foro" type="text" id="domicilio" name="domicilio" required><br>
                     </div>
 
                     <div class="botones">
-                        <input class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;"
+                        <input tabindex="48" aria-label="Botón para buscar abogado participante" class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;"
                             type="submit" value="Buscar">
                     </div>
                 </form>
@@ -191,7 +194,7 @@
     </div>
 
     <div class="textoFinal espacioInferiorFormularios">
-        <p class="textoInternoForms">
+        <p tabindex="49" class="textoInternoForms">
             * El presente formulario deberá ser impreso y firmado por todos los abogados miembros
             del Estudio Jurídico Colectivo,acompañado de copias de cédulas y papeletas de votación
             de todos los participantes; y presentada en las Direcciones Provinciales del Consejo de
@@ -200,14 +203,14 @@
     </div>
 
     <div class="textoFinal espacioInferiorFormularios">
-        <p class="textoInternoForms">
+        <p tabindex="50" class="textoInternoForms">
             * Todos los campos son requeridos.
         </p>
     </div>
 
     <div class="botones espacioInferiorFormularios">
-        <button class="diseñoBotones textoInternoForms colorBlanco">Aceptar</button>
-        <button class="diseñoBotones textoInternoForms colorBlanco">Cancelar</button>
+        <button tabindex="51" aria-label="Botón para aceptar" class="diseñoBotones textoInternoForms colorBlanco">Aceptar</button>
+        <button tabindex="52" aria-label="Botón para cancelar" class="diseñoBotones textoInternoForms colorBlanco">Cancelar</button>
     </div>
 
 </body>
@@ -215,45 +218,45 @@
     <div class="footer-container">
         <div class="escudoDir">
             <div class="cajaEscudoF">
-                <img tabindex="85" class="escudoEcuador" src="imagenes/ecuador.png" alt="Escudo del Ecuador">
+                <img tabindex="53" class="escudoEcuador" src="imagenes/ecuador.png" alt="Escudo del Ecuador">
             </div>
             <div class="copyDir">
-                <p tabindex="86" class="padding-0">Dirección: 12 de Octubre N24-563 Y Francisco Salazar</p>
-                <p tabindex="87" class="padding-0">Copyright 2011 Consejo de la Judicatura</p>
+                <p tabindex="54" class="padding-0">Dirección: 12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="55" class="padding-0">Copyright 2011 Consejo de la Judicatura</p>
             </div>
         </div>
         <div class="enlaces">
             <ul>
-                <li><a tabindex="88"
+                <li><a tabindex="56"
                         href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
                         Web Mail
                     </a></li>|
-                <li><a tabindex="89" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                <li><a tabindex="57" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
                         Links de Interés
                     </a></li>|
-                <li><a tabindex="90" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                <li><a tabindex="58" href="https://www.funcionjudicial.gob.ec/es/contactenos">
                         Contáctenos
                     </a></li>|
-                <li><a tabindex="91" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                <li><a tabindex="59" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
                         Mapa del Sitio
                     </a></li>|
             </ul>
         </div>
         <div class="contanier-1">
             <div class="cajaRedes">
-                <h4 tabindex="92">Encuéntranos en:</h4>
+                <h4 tabindex="60">Encuéntranos en:</h4>
                 <div class="redes">
-                    <a tabindex="93" href="https://www.facebook.com/CJudicaturaEc" aria-label="Icono de facebook">
+                    <a tabindex="61" href="https://www.facebook.com/CJudicaturaEc" aria-label="Icono de facebook">
                         <i class="fab fa-facebook tamanioredes"></i>
                     </a>
-                    <a tabindex="94" href="https://twitter.com/CJudicaturaEc" aria-label="Icono de x-twitter">
+                    <a tabindex="62" href="https://twitter.com/CJudicaturaEc" aria-label="Icono de x-twitter">
                         <i class="fa-brands fa-x-twitter tamanioredes"></i>
                     </a>
-                    <a tabindex="95" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ"
+                    <a tabindex="63" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ"
                         aria-label="Icono de youtube">
                         <i class="fab fa-youtube tamanioredes"></i>
                     </a>
-                    <a tabindex="96" href="https://www.instagram.com/cjudicaturaec/" aria-label="Icono de instagram">
+                    <a tabindex="64" href="https://www.instagram.com/cjudicaturaec/" aria-label="Icono de instagram">
                         <i class="fab fa-instagram tamanioredes"></i>
                     </a>
                 </div>
