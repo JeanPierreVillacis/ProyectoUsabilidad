@@ -258,3 +258,8 @@ form {
     padding: 20px 60px;
     border-radius: 20px;
 }
+
+.iconoSubirCedula :hover{
+    cursor: pointer;
+    background: #FFB800;
+}
