@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos/estilos_fa.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Foro De Abogados</title>
 </head>
 
@@ -127,24 +128,24 @@
                 <p tabindex="36" aria-label="Seccion para datos del Representante">Datos Del Representante</p>
             </div>
             <div class="cajaForm textoInternoForms colorPrimario columnasRepresentante" style="justify-content: space-between;">
-                <div class="d-flex_fd-column" style="justify-content: space-around;">
+                <div class="d-flex_fd-column" style="justify-content: space-around; width: 50%;">
                     <div class="input-group">
                         <label tabindex="36" style="margin: 5px 10px;" for="nombre">Número de cédula:</label>
                         <input tabindex="37" aria-label="Input para ingresar el numero de cedula" type="text" id="nombre" name="nombre" required><br>
                     </div>
                     <div style="display: flex; justify-content: left;" class="input-group">
-                        <label tabindex="38" for="domicilio" style="padding-right: 20px;">Subir copia de cédula:</label>
+                        <label tabindex="38" for="domicilio" style="margin: 5px 10px; width: 98px;">Subir copia de cédula:</label>
                         <div class="d-flex_fd-column" style="width: 100%; margin-right: 10px;">
                             <form action="">
                                 <input type="file" name="subir documento" id="subir documento" hidden>
                                 <div class="d-flex-centrado">
-                                    <label for="subir documento" style="width: auto;">
+                                    <label for="subir documento" style="width: 50%;">
                                         <div class="d-flex_fd-column iconoSubirCedula">
                                             <a tabindex="39" aria-label="Botón para subir la copia de cedula" class="redondeadoI">
                                                 <i class="fa-solid fa-file-arrow-up fa-2xl colorBlanco" style="display: flex; justify-content: center; align-items: center;"></i>
                                             </a>
                                         </div>
-                                        <p tabindex="40" style="display: flex; justify-content: center;">cedula.pdf</p>
+                                        <p tabindex="40" style="text-align: center;" id="nombre-archivo">Seleccione un archivo</p>
                                     </label>
                                 </div>
                             </form>
@@ -194,7 +195,7 @@
     </div>
 
     <div class="textoFinal espacioInferiorFormularios">
-        <p tabindex="49" class="textoInternoForms">
+        <p tabindex="49" class="textoInternoForms" style="font-weight: normal;">
             * El presente formulario deberá ser impreso y firmado por todos los abogados miembros
             del Estudio Jurídico Colectivo,acompañado de copias de cédulas y papeletas de votación
             de todos los participantes; y presentada en las Direcciones Provinciales del Consejo de
@@ -203,7 +204,7 @@
     </div>
 
     <div class="textoFinal espacioInferiorFormularios">
-        <p tabindex="50" class="textoInternoForms">
+        <p tabindex="50" class="textoInternoForms" style="font-weight: normal;">
             * Todos los campos son requeridos.
         </p>
     </div>
@@ -266,5 +267,19 @@
 </footer>
 
 <script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+<script>
+    let archivo_cedula = document.getElementById("subir documento")
+    let p_nombre = document.getElementById("nombre-archivo")
+
+    archivo_cedula.addEventListener("input", () => {
+        if (archivo_cedula.files.length) {
+            let nombre_archivo = archivo_cedula.files[0].name;
+            p_nombre.innerHTML = `${archivo_cedula.files[0].name}`;
+        } else {
+            p_nombre.innerHTML = "Seleccione un archivo"
+        }
+    })
+</script>
 
 </html>
