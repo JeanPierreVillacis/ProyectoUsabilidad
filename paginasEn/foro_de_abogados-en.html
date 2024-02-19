@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/estilos_fa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Lawyers Forum</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cajaLogo"> 
+            <img tabindex="1" class="logo" src="/imagenes/consejo-de-la-judicatura-logo.png" alt="Judiciary Council" width="75px">
+        </div>
+        <div tabindex="2" class="cajaBuscar">
+            <input tabindex="3" class="txtBuscar" placeholder="Search"></input>
+            <button class="botonBusqueda" tabindex="4" aria-label="search icon with button" ><i class="lupa fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags_item" data-language="es">
+                <a href="/foro_de_abogados.html">
+                    <img tabindex="5" src="/icons-flags/ec.svg" alt="Flag of Ecuador to change the language to Spanish">
+                </a>
+            </div>
+            <div class="flags_item" data-language="en">
+                <a href="/paginasEn/foro_de_abogados-en.html">
+                    <img tabindex="6" src="/icons-flags/us.svg" alt="Flag of USA to change the language to English">
+                </a>
+            </div>
+            <div class="flags_item" data-language="fr">
+                <a href="/paginasFr/foro_de_abogados-fr.html">
+                    <img tabindex="7" src="/icons-flags/fr.svg" alt="Flag of France to change the language to French">
+                </a>
+            </div>
+            <div class="flags_item" data-language="zh">
+                <a href="/paginasZn/foro_de_abogados-zn.html">
+                    <img tabindex="8" src="/icons-flags/cn.svg" alt="Flag of China to change the language to Chinese (mandarin)">
+                </a>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" id="check" checked>
+    <label tabindex="9" for="check" class="mostrar-menu" aria-label="Menu bar">
+        &#8801
+    </label>
+    <nav class="nav1">
+        <ul class="lista1">
+            <li><a tabindex="10" href="">Home</a></li>
+            <li><a tabindex="11" href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
+                Judiciary Council
+            </a></li>
+            <li><a tabindex="12" href="https://www.funcionjudicial.gob.ec/lotaip/transparenciahttps://www.funcionjudicial.gob.ec/lotaip/transparencia">
+                Transparency
+            </a></li>
+            <li><a tabindex="13" href="https://cjdocumental.funcionjudicial.gob.ec/sgdt/public/busquedaDocumentos.jsf">
+                External Procedures
+            </a></li>
+            <li><a tabindex="14" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                Press Room
+            </a></li>
+            <li><a tabindex="15" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/341-web-provinciales.html">
+                Provinces
+            </a></li>
+            <li><a tabindex="16" href="http://intranet.funcionjudicial.gob.ec/">
+                Intranet
+            </a></li>
+        </ul>
+        <label tabindex="17" for="check" class="esconder-menu" aria-label="X icon to close the menu">
+            &#215
+    </nav>
+
+    <h1 class="tServicios">
+        <p tabindex="18" class="colorPrimario">Lawyers Forum Information System</p>
+    </h1>
+
+    <div class="cajaFormEJ">
+        <!-- Registro de estudio juridicos -->
+        <section>
+            <div class="contenedorForms">
+                <div class="tituloForm colorPrimario">
+                    <p tabindex="19" aria-label="Section for registration of collective legal studies">Register of Collective Legal Studies</p>
+                </div>
+                <div class="cajaForm colorPrimario">
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label tabindex="20" for="name">Name:</label>
+                            <input tabindex="21" aria-label="Input to enter the name" type="text" id="nombre" name="nombre" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="22" for="home address">Home address:</label>
+                            <input tabindex="23" aria-label="Input to enter the address" type="text" id="domicilio" name="domicilio" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="24" for="province">Province:</label>
+                            <input tabindex="25" aria-label="Input to enter the province" type="text" id="provincia" name="provincia" required><br>
+                            <label tabindex="26" for="canton">Canton:</label>
+                            <input tabindex="27" aria-label="Input to enter the canton" type="text" id="canton" name="canton" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="28" for="cell phone">Cell phone:</label>
+                            <input tabindex="29" aria-label="Input to enter the cell phone" type="tel" id="celular" name="celular" required><br>
+                            <label tabindex="30" for="e-mail">E-mail:</label>
+                            <input tabindex="31" aria-label="Input to enter the email" type="email" id="correo" name="correo" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="32" for="password">Password:</label>
+                            <input tabindex="33" aria-label="Input to enter the password" type="password" id="clave" name="clave" required><br>
+                            <label tabindex="34" for="confirm_password">Confirm Password:</label>
+                            <input tabindex="35" aria-label="Input to confirm password" type="password" id="confirmar_clave" name="confirmar_clave" required><br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="contenedorForms gapFormularios" style="height: auto;">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="36" aria-label="Representative data section">Representative Information</p>
+            </div>
+            <div class="cajaForm textoInternoForms colorPrimario columnasRepresentante" style="justify-content: space-between;">
+                <div class="d-flex_fd-column" style="justify-content: space-around; width: 50%;">
+                    <div class="input-group">
+                        <label tabindex="36" style="margin: 5px 10px;" for="id_number">ID number:</label>
+                        <input tabindex="37" aria-label="Input to enter the ID number" type="text" id="nombre" name="nombre" required><br>
+                    </div>
+                    <div style="display: flex; justify-content: left;" class="input-group">
+                        <label tabindex="38" for="domicilio" style="margin: 5px 10px; width: 98px;">Upload copy of ID:</label>
+                        <div class="d-flex_fd-column" style="width: 100%; margin-right: 10px;">
+                            <form action="">
+                                <input type="file" name="subir documento" id="subir documento" hidden>
+                                <div class="d-flex-centrado">
+                                    <label for="subir documento" style="width: 50%;">
+                                        <div class="d-flex_fd-column iconoSubirCedula">
+                                            <a tabindex="39" aria-label="Button to upload the copy of the ID" class="redondeadoI">
+                                                <i class="fa-solid fa-file-arrow-up fa-2xl colorBlanco" style="display: flex; justify-content: center; align-items: center;"></i>
+                                            </a>
+                                        </div>
+                                        <p tabindex="40" style="text-align: center;" id="nombre-archivo">Select a file</p>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex_fd-column">
+                    <label tabindex="41" style="margin: 5px 10px; text-align: center;">How to upload your file? Look at the video.</label>
+                    <div style="width: auto; height: auto; margin: 5px 10px;">
+                        <iframe tabindex="42" 
+                            width="98%" height="98%"
+                            src="https://www.youtube.com/embed/7-kSf0XSJCM?si=v4I6OmbFoxsxVjmM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            class="borde_redondeado">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorForms gapFormularios espacioInferiorFormularios">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="43" aria-label="Section for information about participating lawyers">Participating Attorney Data</p>
+            </div>
+            <div class="cajaForm colorPrimario">
+                <form action="#" method="post">
+                    <div class="input-group2">
+                        <label tabindex="44" for="nombre">ID number:</label>
+                        <input tabindex="45" aria-label="Input to enter the ID number" type="text" id="nombre" name="nombre" required><br>
+                    </div>
+
+                    <div class="input-group2">
+                        <label tabindex="46" for="domicilio">Forum registration number:</label>
+                        <input tabindex="47" aria-label="Input to enter forum registration number" type="text" id="domicilio" name="domicilio" required><br>
+                    </div>
+
+                    <div class="botones">
+                        <input tabindex="48" aria-label="Button to search for participating attorney" class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;"
+                            type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p tabindex="49" class="textoInternoForms" style="font-weight: normal;">
+            * This form must be printed and signed by all attorneys who are members of the Collective 
+            Law Firm, accompanied by copies of identification cards and voting papers of all 
+            participants; and presented to the Provincial Directorates of the Judicial Council.
+        </p>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p tabindex="50" class="textoInternoForms" style="font-weight: normal;">
+            * All fields are required.
+        </p>
+    </div>
+
+    <div class="botones espacioInferiorFormularios">
+        <button tabindex="51" aria-label="Accept button" class="diseñoBotones textoInternoForms colorBlanco">Accept</button>
+        <button tabindex="52" aria-label="Cancel button" class="diseñoBotones textoInternoForms colorBlanco">Cancel</button>
+    </div>
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="escudoDir">
+            <div class="cajaEscudoF">
+                <img tabindex="53" class="escudoEcuador" src="/imagenes/ecuador.png" alt="Ecuadorian Coat of Arms">
+            </div>
+            <div class="copyDir">
+                <p tabindex="54" class="padding-0">Addres: 12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="55" class="padding-0">Copyright 2011 Judiciary Council</p>
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a tabindex="56" href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
+                    Web Mail
+                </a></li>|
+                <li><a tabindex="57" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                    Links of Interest
+                </a></li>|
+                <li><a tabindex="58" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                    Contact us
+                </a></li>|
+                <li><a tabindex="59" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                    Site Map
+                </a></li>|
+            </ul>
+        </div>
+        <div class="contanier-1">
+            <div class="cajaRedes">
+                <h4 tabindex="60">Find us:</h4>
+                <div class="redes">
+                    <a tabindex="61" href="https://www.facebook.com/CJudicaturaEc" aria-label="Facebook icon">
+                        <i class="fab fa-facebook tamanioredes"></i>
+                    </a>
+                    <a tabindex="62" href="https://twitter.com/CJudicaturaEc" aria-label="X-twitter icon">
+                        <i class="fa-brands fa-x-twitter tamanioredes"></i>
+                    </a>
+                    <a tabindex="63" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ" aria-label="Youtube icon">
+                        <i class="fab fa-youtube tamanioredes"></i>
+                    </a>
+                    <a tabindex="64" href="https://www.instagram.com/cjudicaturaec/" aria-label="Instagram icon">
+                        <i class="fab fa-instagram tamanioredes"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+<script>
+    let archivo_cedula = document.getElementById("subir documento")
+    let p_nombre = document.getElementById("nombre-archivo")
+
+    archivo_cedula.addEventListener("input", () => {
+        if (archivo_cedula.files.length) {
+            let nombre_archivo = archivo_cedula.files[0].name;
+            p_nombre.innerHTML = `${archivo_cedula.files[0].name}`;
+        } else {
+            p_nombre.innerHTML = "Select a file"
+        }
+    })
+</script>
+
+</html>

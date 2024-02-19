@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos_fa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <title>Formularios Y Documentos</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cajaLogo"> 
+            <img tabindex="1" class="logo" src="imagenes/consejo-de-la-judicatura-logo.png" alt="consejo de la judicatura" width="75px">
+        </div>
+        <div tabindex="2" class="cajaBuscar">
+            <input tabindex="3" class="txtBuscar" placeholder="Buscar"></input>
+            <button class="botonBusqueda" tabindex="4" aria-label="icono de búsqueda con botón" ><i class="lupa fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags_item" data-language="es">
+                <a href="/formulario_y_documentos.html">
+                    <img tabindex="5" src="/icons-flags/ec.svg" alt="Bandera de Ecuador para cambiar el idioma a español">
+                </a>
+            </div>
+            <div class="flags_item" data-language="en">
+                <a href="/paginasEn/formulario_y_documentos-en.html">
+                    <img tabindex="6" src="icons-flags/us.svg" alt="Bandera de Estados Unidos para cambiar el idioma a inglés">
+                </a>
+            </div>
+            <div class="flags_item" data-language="fr">
+                <a href="/paginasFr/formulario_y_documentos-fr.html">
+                    <img tabindex="7" src="icons-flags/fr.svg" alt="Bandera de Francia para cambiar el idioma a francés">
+                </a>
+            </div>
+            <div class="flags_item" data-language="zh">
+                <a href="/paginasZn/formulario_y_documentos-zn.html">
+                    <img tabindex="8" src="icons-flags/cn.svg" alt="Bandera de China para cambiar el idioma a chino mandarin">
+                </a>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" id="check" checked>
+    <label tabindex="9" for="check" class="mostrar-menu" aria-label="barra de menú">
+        &#8801
+    </label>
+    <nav class="nav1">
+        <ul class="lista1">
+            <li><a tabindex="10" href="">Inicio</a></li>
+            <li><a tabindex="11" href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
+                Consejo de la Judicatura
+            </a></li>
+            <li><a tabindex="12" href="https://www.funcionjudicial.gob.ec/lotaip/transparenciahttps://www.funcionjudicial.gob.ec/lotaip/transparencia">
+                Transparencia
+            </a></li>
+            <li><a tabindex="13" href="https://cjdocumental.funcionjudicial.gob.ec/sgdt/public/busquedaDocumentos.jsf">
+                Trámites externos
+            </a></li>
+            <li><a tabindex="14" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                Sala de prensa
+            </a></li>
+            <li><a tabindex="15" href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/341-web-provinciales.html">
+                Provincias
+            </a></li>
+            <li><a tabindex="16" href="http://intranet.funcionjudicial.gob.ec/">
+                Intranet
+            </a></li>
+        </ul>
+        <label tabindex="17" for="check" class="esconder-menu" aria-label="Icono de X parra cerrar el menú">
+            &#215
+    </nav>
+
+    <!-- Titulo -->
+    <h1 class="tServicios">
+        <p tabindex="18" class="colorPrimario">Formularios Y Documentos</p>
+    </h1>
+
+    <!-- Formularios Y Documentos -->
+    <div class="cajaFormEJ">
+        <!-- Formularios -->
+        <div class="contenedorForms">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="19">Formularios</p>
+            </div>
+
+            <!-- Caja que contiene todas las cajas de descargas-->
+            <div class="cajaForm">
+                <!-- Caja de descarga 1-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="20" class="diseñoCajasTexto colorBlanco">Manual de ingreso - Actas audiencias</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a href="https://www.funcionjudicial.gob.ec/www/pdf/manualdeingresodeactasdeaudiencia.pdf"
+                            target="_blank" tabindex="21" class="diseñoBotonesDescarga colorBlanco"
+                            aria-label="Descargar el formulario de manual de ingreso y actas de audiencia">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 2-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="22" class="diseñoCajasTexto colorBlanco">Demanda de pensión</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/consejo/formulariodemanda_de_pension.pdf"
+                            target="_blank" tabindex="22" aria-label="Descargar el formulario de demanda de pensión">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 3-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="23" class="diseñoCajasTexto colorBlanco">Aumento de pensión</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/consejo/formularioaumento_pension.pdf"
+                            target="_blank" tabindex="24" aria-label="Descargar el formulario de aumento de pensión">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Caja de descarga 4-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="25" class=" diseñoCajasTexto colorBlanco">Rebaja de pensión</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/consejo/formulariorebaja_pension.pdf"
+                            target="_blank" tabindex="26" aria-label="Descargar el formulario de rebaja de pensión">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 5-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="27" class=" diseñoCajasTexto colorBlanco">Declaratoria de paternidad</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/consejo/formulariodeclaracion%20paternidad%20y%20fijacion%20alimentos.pdf"
+                            target="_blank" tabindex="28"
+                            aria-label="Descargar el formulario de declaratoria de paternidad">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 6-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="29" class=" diseñoCajasTexto colorBlanco">Formulario04: Copias certificadas</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/FORMULARIOF04-COPIAS%20SIMPLESYCERTIFICADAS.pdf"
+                            target="_blank" tabindex="30" aria-label="Descargar el formulario de copias certificadas">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 7-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="31" class=" diseñoCajasTexto colorBlanco">Formulario06: Solicitud de reclamo - Quejas
+                    </p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/Formato%20atencion%20quejas%20F06.pdf"
+                            target="_blank" tabindex="32" aria-label="Descargar el formulario de solicitud de reclamo">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 8-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="33" class="diseñoCajasTexto colorBlanco">Presentación de demanda (Proceso monitorio)
+                    </p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/FORMULARIO%20PROCESO%20MONITORIOL%20OK.pdf"
+                            target="_blank" tabindex="34"
+                            aria-label="Descargar el formulario de presentación de demanda">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 9-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="35" class=" diseñoCajasTexto colorBlanco">Formulario notarías</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/servicio-notarial" target="_blank" tabindex="36"
+                            aria-label="Descargar el formulario de notarías">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 10-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="37" class=" diseñoCajasTexto colorBlanco">Formulario de acreditación de notario
+                        suplente</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/Formulario%20Acreditacion%20Notario%20Suplente%20ed.pdf"
+                            target="_blank" tabindex="38"
+                            aria-label="Descargar el formulario de acreditación de notario suplente">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Documentos -->
+        <div class="contenedorForms gapFormularios espacioInferiorFormularios">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="39">Documentos</p>
+            </div>
+
+            <!-- Caja que contiene todas las cajas de documentos-->
+            <div class="cajaForm">
+                <!-- Caja de descarga 1-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="40" class="diseñoCajasTexto colorBlanco">Tabla de pensiones mínimas alimenticias</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/manualdeingresodeactasdeaudiencia.pdf"
+                            target="_blank" tabindex="41"
+                            aria-label="Descargar el documento de tabla de pensiones mínimas alimenticias">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja de descarga 2-->
+                <div class="d-flex_jc-sb mb-10" style="gap: 20px;">
+                    <!-- Texto -->
+                    <p tabindex="42" class="diseñoCajasTexto colorBlanco">Plan estratégico de la función judicial</p>
+
+                    <!-- Boton de descarga -->
+                    <div class="d-flex-botones">
+                        <a class="diseñoBotonesDescarga colorBlanco"
+                            href="https://www.funcionjudicial.gob.ec/www/pdf/PlanEstrategicoFJ2019-2025.pdf"
+                            target="_blank" tabindex="43"
+                            aria-label="Descargar el documento de plan estratégico de la función judicial">
+                            <i class="fa-solid fa-download" style="font-size: 175%;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="escudoDir">
+            <div class="cajaEscudoF">
+                <img tabindex="44" class="escudoEcuador" src="imagenes/ecuador.png" alt="Escudo del Ecuador">
+            </div>
+            <div class="copyDir">
+                <p tabindex="45" class="padding-0">Dirección: 12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="46" class="padding-0">Copyright 2011 Consejo de la Judicatura</p>
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a tabindex="47"
+                        href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
+                        Web Mail
+                    </a></li>|
+                <li><a tabindex="48" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                        Links de Interés
+                    </a></li>|
+                <li><a tabindex="49" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                        Contáctenos
+                    </a></li>|
+                <li><a tabindex="50" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                        Mapa del Sitio
+                    </a></li>|
+            </ul>
+        </div>
+        <div class="contanier-1">
+            <div class="cajaRedes">
+                <h4 tabindex="51">Encuéntranos en:</h4>
+                <div class="redes">
+                    <a tabindex="52" href="https://www.facebook.com/CJudicaturaEc" aria-label="Icono de facebook">
+                        <i class="fab fa-facebook tamanioredes"></i>
+                    </a>
+                    <a tabindex="53" href="https://twitter.com/CJudicaturaEc" aria-label="Icono de x-twitter">
+                        <i class="fa-brands fa-x-twitter tamanioredes"></i>
+                    </a>
+                    <a tabindex="54" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ"
+                        aria-label="Icono de youtube">
+                        <i class="fab fa-youtube tamanioredes"></i>
+                    </a>
+                    <a tabindex="55" href="https://www.instagram.com/cjudicaturaec/" aria-label="Icono de instagram">
+                        <i class="fab fa-instagram tamanioredes"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+
+</html>

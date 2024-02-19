@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/estilos_fa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>律師論壇</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cajaLogo">
+            <img tabindex="1" class="logo" src="../imagenes/consejo-de-la-judicatura-logo.png" alt="司法委員會" width="75px">
+        </div>
+        <div tabindex="2" class="cajaBuscar">
+            <input tabindex="3" class="txtBuscar" placeholder="尋找"></input>
+            <button class="botonBusqueda" tabindex="4" aria-label="帶按鈕的搜尋圖標"><i
+                    class="lupa fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags_item" data-language="es">
+                <a href="/foro_de_abogados.html">
+                    <img tabindex="5" src="/icons-flags/ec.svg" alt="厄瓜多國旗將語言改為西班牙語">
+                </a>
+            </div>
+            <div class="flags_item" data-language="en">
+                <a href="/paginasEn/foro_de_abogados-en.html">
+                    <img tabindex="6" src="/icons-flags/us.svg" alt="美國國旗將語言改為英語">
+                </a>
+            </div>
+            <div class="flags_item" data-language="fr">
+                <a href="/paginasFr/foro_de_abogados-fr.html">
+                    <img tabindex="7" src="/icons-flags/fr.svg" alt="法國國旗將語言改為法語">
+                </a>
+            </div>
+            <div class="flags_item" data-language="zh">
+                <a href="/paginasZn/foro_de_abogados-zn.html">
+                    <img tabindex="8" src="/icons-flags/cn.svg" alt="中國國旗將語言改為普通話">
+                </a>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" id="check" checked>
+    <label tabindex="9" for="check" class="mostrar-menu" aria-label="選單列">
+        &#8801
+    </label>
+    <nav class="nav1">
+        <ul class="lista1">
+            <li><a tabindex="10" href="">開始</a></li>
+            <li><a tabindex="11"
+                    href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
+                    司法委員會
+                </a></li>
+            <li><a tabindex="12"
+                    href="https://www.funcionjudicial.gob.ec/lotaip/transparenciahttps://www.funcionjudicial.gob.ec/lotaip/transparencia">
+                    透明度
+                </a></li>
+            <li><a tabindex="13" href="https://cjdocumental.funcionjudicial.gob.ec/sgdt/public/busquedaDocumentos.jsf">
+                    外部程式
+                </a></li>
+            <li><a tabindex="14" href="https://www.funcionjudicial.gob.ec/es/saladeprensa/noticias">
+                    新聞發布室
+                </a></li>
+            <li><a tabindex="15"
+                    href="https://www.funcionjudicial.gob.ec/index.php/es/component/content/article/25-consejo-judicatura/341-web-provinciales.html">
+                    省份
+                </a></li>
+            <li><a tabindex="16" href="http://intranet.funcionjudicial.gob.ec/">
+                    內部網路
+                </a></li>
+        </ul>
+        <label tabindex="17" for="check" class="esconder-menu" aria-label="用於關閉選單的 X 圖標">
+            &#215
+    </nav>
+
+    <h1 class="tServicios">
+        <p tabindex="18" class="colorPrimario">律師論壇資訊系統</p>
+    </h1>
+
+    <div class="cajaFormEJ">
+        <!-- Registro de estudio juridicos -->
+        <section>
+            <div class="contenedorForms">
+                <div class="tituloForm colorPrimario">
+                    <p tabindex="19" aria-label="集體法律研究登記科">集體法律研究登記冊</p>
+                </div>
+                <div class="cajaForm colorPrimario">
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label tabindex="20" for="nombre">姓名:</label>
+                            <input tabindex="21" aria-label="輸入輸入姓名" type="text" id="nombre" name="nombre" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="22" for="domicilio">家</label>
+                            <input tabindex="23" aria-label="輸入輸入地址" type="text" id="domicilio" name="domicilio" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="24" for="provincia">省：</label>
+                            <input tabindex="25" aria-label="輸入進入省份" type="text" id="provincia" name="provincia" required><br>
+                            <label tabindex="26" for="canton">廣州：</label>
+                            <input tabindex="27" aria-label="輸入進入州" type="text" id="canton" name="canton" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="28" for="celular">智慧型手機:</label>
+                            <input tabindex="29" aria-label="輸入進入手機" type="tel" id="celular" name="celular" required><br>
+                            <label tabindex="30" for="correo">電子郵件</label>
+                            <input tabindex="31" aria-label="輸入輸入信箱" type="email" id="correo" name="correo" required><br>
+                        </div>
+    
+                        <div class="input-group">
+                            <label tabindex="32" for="clave">線索：</label>
+                            <input tabindex="33" aria-label="輸入輸入密碼" type="password" id="clave" name="clave" required><br>
+                            <label tabindex="34" for="confirmar_clave">確認密碼：</label>
+                            <input tabindex="35" aria-label="輸入確認鍵" type="password" id="confirmar_clave" name="confirmar_clave" required><br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="contenedorForms gapFormularios" style="height: auto;">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="36" aria-label="代表性數據部分">代表訊息</p>
+            </div>
+            <div class="cajaForm textoInternoForms colorPrimario columnasRepresentante" style="justify-content: space-between;">
+                <div class="d-flex_fd-column" style="justify-content: space-around; width: 50%;">
+                    <div class="input-group">
+                        <label tabindex="36" style="margin: 5px 10px;" for="nombre">身分證號碼：</label>
+                        <input tabindex="37" aria-label="輸入輸入身分證號碼" type="text" id="nombre" name="nombre" required><br>
+                    </div>
+                    <div style="display: flex; justify-content: left;" class="input-group">
+                        <label tabindex="38" for="domicilio" style="margin: 5px 10px; width: 98px;">上傳身分證影本：</label>
+                        <div class="d-flex_fd-column" style="width: 100%; margin-right: 10px;">
+                            <form action="">
+                                <input type="file" name="subir documento" id="subir documento" hidden>
+                                <div class="d-flex-centrado">
+                                    <label for="subir documento" style="width: 50%;">
+                                        <div class="d-flex_fd-column iconoSubirCedula">
+                                            <a tabindex="39" aria-label="用於上傳 ID 副本的按鈕" class="redondeadoI">
+                                                <i class="fa-solid fa-file-arrow-up fa-2xl colorBlanco" style="display: flex; justify-content: center; align-items: center;"></i>
+                                            </a>
+                                        </div>
+                                        <p tabindex="40" style="text-align: center;" id="nombre-archivo">選擇一個文件</p>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex_fd-column">
+                    <label tabindex="41" style="margin: 5px 10px; text-align: center;">如何上傳您的文件？ 看影片</label>
+                    <div style="width: auto; height: auto; margin: 5px 10px;">
+                        <iframe tabindex="42" 
+                            width="98%" height="98%"
+                            src="https://www.youtube.com/embed/7-kSf0XSJCM?si=v4I6OmbFoxsxVjmM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            class="borde_redondeado">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorForms gapFormularios espacioInferiorFormularios">
+            <div class="tituloForm colorPrimario">
+                <p tabindex="43" aria-label="有關參與律師的資訊部分">參與律師數據</p>
+            </div>
+            <div class="cajaForm colorPrimario">
+                <form action="#" method="post">
+                    <div class="input-group2">
+                        <label tabindex="44" for="nombre">身分證號碼：</label>
+                        <input tabindex="45" aria-label="輸入輸入身分證號碼" type="text" id="nombre" name="nombre" required><br>
+                    </div>
+
+                    <div class="input-group2">
+                        <label tabindex="46" for="domicilio">論壇註冊號碼：</label>
+                        <input tabindex="47" aria-label="輸入輸入論壇註冊號" type="text" id="domicilio" name="domicilio" required><br>
+                    </div>
+
+                    <div class="botones">
+                        <input tabindex="48" aria-label="搜尋參與律師的按鈕" class="textoInternoForms colorBlanco diseñoBotones" style="margin-right: 0px;"
+                            type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p tabindex="49" class="textoInternoForms" style="font-weight: normal;">
+            * 此表格必須由所有會員律師列印並簽名
+             集體法律研究報告，附有身分證和選票的副本
+             所有參與者； 並提交給省理事會
+             司法機構。
+        </p>
+    </div>
+
+    <div class="textoFinal espacioInferiorFormularios">
+        <p tabindex="50" class="textoInternoForms" style="font-weight: normal;">
+            * 各領域都需要。
+        </p>
+    </div>
+
+    <div class="botones espacioInferiorFormularios">
+        <button tabindex="51" aria-label="接受按鈕" class="diseñoBotones textoInternoForms colorBlanco">接受</button>
+        <button tabindex="52" aria-label="取消按鈕" class="diseñoBotones textoInternoForms colorBlanco">取消</button>
+    </div>
+
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="escudoDir">
+            <div class="cajaEscudoF">
+                <img tabindex="44" class="escudoEcuador" src="../imagenes/ecuador.png" alt="厄瓜多國徽">
+            </div>
+            <div class="copyDir">
+                <p tabindex="45" class="padding-0">地址：12 de Octubre N24-563 Y Francisco Salazar</p>
+                <p tabindex="46" class="padding-0">版權所有 2011 司法委員會</p>
+            </div>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a tabindex="47"
+                        href="https://mail.funcionjudicial.gob.ec/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail.funcionjudicial.gob.ec%2fowa%2f">
+                        網路郵件
+                    </a></li>|
+                <li><a tabindex="48" href="https://www.funcionjudicial.gob.ec/es/links-de-interes">
+                    有興趣的連結
+                    </a></li>|
+                <li><a tabindex="49" href="https://www.funcionjudicial.gob.ec/es/contactenos">
+                    聯絡我們
+                    </a></li>|
+                <li><a tabindex="50" href="https://www.funcionjudicial.gob.ec/es/mapa-del-sitio">
+                    網站地圖
+                    </a></li>|
+            </ul>
+        </div>
+        <div class="contanier-1">
+            <div class="cajaRedes">
+                <h4 tabindex="51">找到我們：</h4>
+                <div class="redes">
+                    <a tabindex="52" href="https://www.facebook.com/CJudicaturaEc" aria-label="臉書圖示">
+                        <i class="fab fa-facebook tamanioredes"></i>
+                    </a>
+                    <a tabindex="53" href="https://twitter.com/CJudicaturaEc" aria-label="x-twitter 圖標">
+                        <i class="fa-brands fa-x-twitter tamanioredes"></i>
+                    </a>
+                    <a tabindex="54" href="https://www.youtube.com/channel/UCltvanBYWk9lKg1rHRWsjyQ"
+                        aria-label="Youtube 圖示">
+                        <i class="fab fa-youtube tamanioredes"></i>
+                    </a>
+                    <a tabindex="55" href="https://www.instagram.com/cjudicaturaec/" aria-label="Instagram 圖示">
+                        <i class="fab fa-instagram tamanioredes"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/85e6f64c7f.js" crossorigin="anonymous"></script>
+
+<script>
+    let archivo_cedula = document.getElementById("subir documento")
+    let p_nombre = document.getElementById("nombre-archivo")
+
+    archivo_cedula.addEventListener("input", () => {
+        if (archivo_cedula.files.length) {
+            let nombre_archivo = archivo_cedula.files[0].name;
+            p_nombre.innerHTML = `${archivo_cedula.files[0].name}`;
+        } else {
+            p_nombre.innerHTML = "Seleccione un archivo"
+        }
+    })
+</script>
+
+</html>
