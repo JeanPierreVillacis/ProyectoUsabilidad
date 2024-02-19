@@ -65,6 +65,8 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+
+    gap:30px
 }
 
 .input-group label {
@@ -169,6 +171,8 @@ form {
     align-items: center;
     align-content: center;
     justify-content: center;
+
+    gap: 30px;
 }
 
 .input-group2 label {
