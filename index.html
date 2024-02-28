@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,9 @@
             <img tabindex="1" class="logo" src="imagenes/consejo-de-la-judicatura-logo.png" alt="consejo de la judicatura" width="75px">
         </div>
         <div tabindex="2" class="cajaBuscar">
-            <input tabindex="3" class="txtBuscar" placeholder="Buscar"></input>
+            <label for="buscar" class="lupa">
+                <input id="buscar" tabindex="3" class="txtBuscar" placeholder="Buscar" aria-label="Ingrese el texto a buscar">
+            </label>            
             <button class="botonBusqueda" tabindex="4" aria-label="icono de búsqueda con botón" ><i class="lupa fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div id="flags" class="flags">
@@ -24,17 +26,17 @@
                 <img tabindex="5" src="icons-flags/ec.svg" alt="Bandera del Ecuador para cambiar el idioma a español">
             </div>
             <div class="flags_item" data-language="en">
-                <a href="/paginasEn/inicio-en.html">
+                <a href="/paginasEn/inicio-en.html" aria-label="Página de Inicio en Inglés">
                     <img tabindex="6" src="icons-flags/us.svg" alt="Bandera de Estados Unidos para cambiar el idioma a inglés">
                 </a>
             </div>
             <div class="flags_item" data-language="fr">
-                <a href="/paginasFr/inicio-fr.html">
+                <a href="/paginasFr/inicio-fr.html" aria-label="Página de Inicio en Frances">
                     <img tabindex="7" src="icons-flags/fr.svg" alt="Bandera de Francia para cambiar el idioma a francés">
                 </a>
             </div>
             <div class="flags_item" data-language="zh">
-                <a href="/paginasZn/inicio-zn.html">
+                <a href="/paginasZn/inicio-zn.html" aria-label="Página de Inicio en Chino">
                     <img tabindex="8" src="icons-flags/cn.svg" alt="Bandera de China para cambiar el idioma a chino mandarin">
                 </a>
             </div>
@@ -68,6 +70,7 @@
         </ul>
         <label tabindex="17" for="check" class="esconder-menu" aria-label="Icono de X parra cerrar el menú">
             &#215
+        </label>
     </nav>
     <div class="cajaNoticias">
         <div> <img tabindex="18" class="imgNoticias" src="imagenes/NoticiaReunion.png" alt="Grupo de personas reunidas, conversando"> </div>
@@ -152,7 +155,9 @@
             <li><a tabindex="39" href="https://apps.funcionjudicial.gob.ec/siscadep/frmConsultaExterna/frmConsultaExterna.php">
                 Guía de Servicios de la Función Judicial
             </a></li>
-            <li><a tabindex="40" href="/formulario_y_documentos.html">                Formularios y Documentos</a></li>
+            <li><a tabindex="40" href="/formulario_y_documentos.html" aria-label="Página de los Formularios y Documentos">
+                Formularios y Documentos
+            </a></li>
         </ul>
     </nav>
 
@@ -197,7 +202,7 @@
                     <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
                     Péritos
                 </a></li>
-                <li><a tabindex="50" href="/foro_de_abogados.html">
+                <li><a tabindex="50" href="/foro_de_abogados.html" aria-label="Página del Foro de abogados">
                     <span class="fleList"><i class="fa-solid fa-chevron-right"></i></span>
                     Foro de Abogados
                 </a></li>
