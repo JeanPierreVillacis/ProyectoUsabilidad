@@ -16,27 +16,27 @@
             <img tabindex="1" class="logo" src="imagenes/consejo-de-la-judicatura-logo.png" alt="consejo de la judicatura" width="75px">
         </div>
         <div tabindex="2" class="cajaBuscar">
-            <input tabindex="3" class="txtBuscar" placeholder="Buscar"></input>
+            <label for="buscar" class="lupa">
+                <input id="buscar" tabindex="3" class="txtBuscar" placeholder="Buscar" aria-label="Ingrese el texto a buscar">
+            </label>            
             <button class="botonBusqueda" tabindex="4" aria-label="icono de búsqueda con botón" ><i class="lupa fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div id="flags" class="flags">
             <div class="flags_item" data-language="es">
-                <a href="/formulario_y_documentos.html">
-                    <img tabindex="5" src="/icons-flags/ec.svg" alt="Bandera de Ecuador para cambiar el idioma a español">
-                </a>
+                <img tabindex="5" src="icons-flags/ec.svg" alt="Bandera del Ecuador para cambiar el idioma a español">
             </div>
             <div class="flags_item" data-language="en">
-                <a href="/paginasEn/formulario_y_documentos-en.html">
+                <a href="/paginasEn/inicio-en.html" aria-label="Página de Inicio en Inglés">
                     <img tabindex="6" src="icons-flags/us.svg" alt="Bandera de Estados Unidos para cambiar el idioma a inglés">
                 </a>
             </div>
             <div class="flags_item" data-language="fr">
-                <a href="/paginasFr/formulario_y_documentos-fr.html">
+                <a href="/paginasFr/inicio-fr.html" aria-label="Página de Inicio en Frances">
                     <img tabindex="7" src="icons-flags/fr.svg" alt="Bandera de Francia para cambiar el idioma a francés">
                 </a>
             </div>
             <div class="flags_item" data-language="zh">
-                <a href="/paginasZn/formulario_y_documentos-zn.html">
+                <a href="/paginasZn/inicio-zn.html" aria-label="Página de Inicio en Chino">
                     <img tabindex="8" src="icons-flags/cn.svg" alt="Bandera de China para cambiar el idioma a chino mandarin">
                 </a>
             </div>
@@ -48,7 +48,7 @@
     </label>
     <nav class="nav1">
         <ul class="lista1">
-            <li><a tabindex="10" href="/index.html">Inicio</a></li>
+            <li><a tabindex="10" href="">Inicio</a></li>
             <li><a tabindex="11" href="https://www.funcionjudicial.gob.ec/es/consejo-de-la-judicatura/quienes-somos/mision-vision">
                 Consejo de la Judicatura
             </a></li>
@@ -70,6 +70,7 @@
         </ul>
         <label tabindex="17" for="check" class="esconder-menu" aria-label="Icono de X parra cerrar el menú">
             &#215
+        </label>
     </nav>
 
     <!-- Titulo -->
